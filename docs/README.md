@@ -2,13 +2,15 @@
 
 Informações básicas do projeto.
 
-* **Projeto:** [NOME DO PROJETO]
-* **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
+* **Projeto:** ConectaRural
+* **Repositório GitHub:** (https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-1-ti1-2010200-conecta-rural.git)
 * **Membros da equipe:**
 
-  * [Fulano](https://github.com/fulano) ⚠️ EXEMPLO ⚠️
-  * [Beltrano](https://github.com/beltrano) ⚠️ EXEMPLO ⚠️
-  * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
+  * [Aldo Constantino Mendes](https://github.com/AldoCMendes) ⚠️ EXEMPLO ⚠️
+  * [Luiz Henrique Horta](https://github.com/LuizHenriqueHO) ⚠️ EXEMPLO ⚠️
+  * [Caio César Falinácio dos Santos](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
+  * [Gabriel de Souza Aredes]
+  * [Daniel Bony Costa Garcia]
 
 A documentação do projeto é estruturada da seguinte forma:
 
@@ -28,7 +30,8 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
 ## Problema
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+Moradores de áreas rurais precisam de acesso a tecnologia e oportunidades, mas enfrentam falta de infraestrutura e inovação.
+
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
