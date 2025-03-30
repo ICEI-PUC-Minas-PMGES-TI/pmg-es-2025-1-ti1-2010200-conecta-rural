@@ -49,23 +49,23 @@ Moradores de areas rurais, moradores de cidade muito pequenas e grandes e pequen
 
 ## Etapa de Entendimento
 
-[Matriz CSD](images/matriz-de-alinhamento-CSD.png)
-[Mapa De Stakeholders](images/mapa-de-stakeholders.png)
-[Entrevista 1](images/entrevista_1.png)
-[Entrevista 2](images/entrevista_2.png)
-[Entrevista 3](images/entrevista_3.png)
-[Entrevista 4](images/entrevista_4.png)
-[Entrevista 5](images/entrevista_5.png)
-[Entrevista 6](images/entrevista_6.png)
+* [Matriz CSD](images/matriz-de-alinhamento-CSD.png)
+* [Mapa De Stakeholders](images/mapa-de-stakeholders.png)
+* [Entrevista 1](images/entrevista_1.png)
+* [Entrevista 2](images/entrevista_2.png)
+* [Entrevista 3](images/entrevista_3.png)
+* [Entrevista 4](images/entrevista_4.png)
+* [Entrevista 5](images/entrevista_5.png)
+* [Entrevista 6](images/entrevista_6.png)
 
 ## Etapa de Definição
 
 ### Personas
 
-[Persona 1](images/persona_1.png)
-[Persona 2](images/persona_2.png)
-[Persona 3](images/persona_3.png)
-[Persona 4](images/persona_4.png)
+* [Persona 1](images/persona_1.png)
+* [Persona 2](images/persona_2.png)
+* [Persona 3](images/persona_3.png)
+* [Persona 4](images/persona_4.png)
 
 
 
@@ -93,10 +93,10 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 ## Proposta de Valor
 
-[Proposta de valor persona 1](images/proposta-de-valor_1.png)
-[Proposta de valor persona 2](images/proposta-de-valor_2.png)
-[Proposta de valor persona 3](images/proposta-de-valor_3.png)
-[Proposta de valor persona 4](images/proposta-de-valor_4.png)
+* [Proposta de valor persona 1](images/proposta-de-valor_1.png)
+* [Proposta de valor persona 2](images/proposta-de-valor_2.png)
+* [Proposta de valor persona 3](images/proposta-de-valor_3.png)
+* [Proposta de valor persona 4](images/proposta-de-valor_4.png)
 
 ## Requisitos
 
@@ -106,31 +106,26 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 | ID     | Descrição do Requisito                                   | Prioridade |
 | ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
+| RF-001 | Cadastro do usuario com email,CPF,Nome,Data de nascimento e etc | ALTA       |
+| RF-002 | Mostras os entregadores mais proximos para auxiliar nas entregas | BAIXA     |
+| RF-003 | Permitir os usuários avaliar os vendedores com base em estrelas ( 0 - mínimo; 5 - máximo) | MÉDIA       |
+| RF-004 | Ensinar os usuários ao usar o software dentro da própria aplicação | ALTA    |
+| RF-005 | Fornecer os relatórios das compras e vendas dos usuários no mês | BAIXO       |
+| RF-006 | Mostrar os locais de emprego na agricultura relacionado ao desejo do usuário | ALTA    |
+| RF-007 | Fazer uma interface similar ao Ifood e ao Instagram | ALTA       |
 
 ### Requisitos não Funcionais
 
 | ID      | Descrição do Requisito                                                              | Prioridade |
 | ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RNF-002 | Deve processar requisições do usuário em no máximo 3s ⚠️ EXEMPLO ⚠️          | BAIXA      |
+| RNF-001 | O site deve ser responsivo, para atender a qualquer tipo de tela | ALTA    |
+| RNF-002 | O site deve utilizar o padrão de segurança HTTPS para passar segurança ao usuário e aos dados          | ALTA     |
+| RNF-003 | O design do site deve ser limpo e simples, para facilitar o uso de quem não tem prática de utilização | ALTA       |
+| RNF-004 | O site deve ser capaz de ser traduzido para outros idiomas | BAIXA     |
+| RNF-005 | O site pode permitir a personalização do conteúdo, como temas | BAIXA       |
+| RNF-006 | O site deve ser resistente a uma demanda alta de usuários  | MÉDIA    |
+| RNF-007 | O site deve utilizar cache para otimizar o tempo de carregamento de conteúdo estático  | MÉDIA    
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Os requisitos de um projeto são classificados em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
->
-> **Orientações**:
->
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Projeto de Interface
 
