@@ -6,11 +6,11 @@ Informações básicas do projeto.
 * **Repositório GitHub:** https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-1-ti1-2010200-conecta-rural.git
 * **Membros da equipe:**
 
-  * [Aldo Constantino Mendes](https://github.com/AldoCMendes) ⚠️ EXEMPLO ⚠️
-  * [Luiz Henrique Horta Oliveira](https://github.com/LuizHenriqueHO) ⚠️ EXEMPLO ⚠️
-  * [Daniel Bony Costa Garcia](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
-  * [Gabriel De souza Aredes Coelho]()
-  * [Caio César Falinacio Dos Santos]()
+  * [Aldo Constantino Mendes](https://github.com/AldoCMendes) 
+  * [Luiz Henrique Horta Oliveira](https://github.com/LuizHenriqueHO) 
+  * [Daniel Bony Costa Garcia](https://github.com/DanielBonypucminas) 
+  * [Gabriel De souza Aredes Coelho](https://github.com/ImGabrielAredes)
+  * [Caio César Falinacio Dos Santos](https://github.com/CaioCFalinacio)
 
 A documentação do projeto é estruturada da seguinte forma:
 
@@ -49,33 +49,25 @@ Moradores de areas rurais, moradores de cidade muito pequenas e grandes e pequen
 
 ## Etapa de Entendimento
 
-**✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nessa etapa, vamos trabalhar com a metdologia de Design Thinking para compreender com maior profundidade o problema a ser tratado. Nesse processo, vamos elaborar:
->
-> * **Matriz CSD**: também conhecida por Matriz de Alinhamento, é uma ferramenta utilizada no Design Thinking para organizar informações e facilitar o processo de tomada de decisão e solução de problemas;
-> * **Mapa de stakeholders**: ferramenta que nos permite compreender o grupo de pessoas e entidades que devemos estudar e conversar para entender mais sobre o problema
-> * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
-> * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
+[Matriz CSD](images/matriz-de-alinhamento-CSD.png)
+[Mapa De Stakeholders](images/mapa-de-stakeholders.png)
+[Entrevista 1](images/entrevista_1.png)
+[Entrevista 2](images/entrevista_2.png)
+[Entrevista 3](images/entrevista_3.png)
+[Entrevista 4](images/entrevista_4.png)
+[Entrevista 5](images/entrevista_5.png)
+[Entrevista 6](images/entrevista_6.png)
 
 ## Etapa de Definição
 
 ### Personas
 
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
+[Persona 1](images/persona_1.png)
+[Persona 2](images/persona_2.png)
+[Persona 3](images/persona_3.png)
+[Persona 4](images/persona_4.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
->
-> **Orientações**:
->
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
+
 
 # Product Design
 
@@ -101,15 +93,10 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 ## Proposta de Valor
 
-**✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
-
-##### Proposta para Persona XPTO ⚠️ EXEMPLO ⚠️
-
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O mapa da proposta de valor é uma ferramenta que nos ajuda a definir qual tipo de produto ou serviço melhor atende às personas definidas anteriormente.
+[Proposta de valor persona 1](images/proposta-de-valor_1.png)
+[Proposta de valor persona 2](images/proposta-de-valor_2.png)
+[Proposta de valor persona 3](images/proposta-de-valor_3.png)
+[Proposta de valor persona 4](images/proposta-de-valor_4.png)
 
 ## Requisitos
 
