@@ -77,8 +77,8 @@ Nesse momento, vamos transformar os insights e validações obtidos em soluçõe
 
 Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
-[Histórias de usuários pt-1](images/historias-de-usuarios_pt1.png)
-[Histórias de usuários pt-2](images/historias-de-usuarios_pt2.png)
+* [Histórias de usuários pt-1](images/historias-de-usuarios_pt1.png)
+* [Histórias de usuários pt-2](images/historias-de-usuarios_pt2.png)
 
 ## Proposta de Valor
 
