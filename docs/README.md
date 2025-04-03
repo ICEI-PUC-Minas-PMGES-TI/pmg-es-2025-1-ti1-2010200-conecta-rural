@@ -49,23 +49,23 @@ Moradores de areas rurais, moradores de cidade muito pequenas e grandes e pequen
 
 ## Etapa de Entendimento
 
-* [Matriz CSD](images/matriz-de-alinhamento-CSD.png)
-* [Mapa De Stakeholders](images/mapa-de-stakeholders.png)
-* [Entrevista 1](images/entrevista_1.png)
-* [Entrevista 2](images/entrevista_2.png)
-* [Entrevista 3](images/entrevista_3.png)
-* [Entrevista 4](images/entrevista_4.png)
-* [Entrevista 5](images/entrevista_5.png)
-* [Entrevista 6](images/entrevista_6.png)
+* images/matriz-de-alinhamento-CSD.png
+* images/mapa-de-stakeholders.png
+* images/entrevista_1.png
+* images/entrevista_2.png
+* images/entrevista_3.png
+* images/entrevista_4.png
+* images/entrevista_5.png
+* images/entrevista_6.png
 
 ## Etapa de Definição
 
 ### Personas
 
-* [Persona 1](images/persona_1.png)
-* [Persona 2](images/persona_2.png)
-* [Persona 3](images/persona_3.png)
-* [Persona 4](images/persona_4.png)
+* images/persona_1.png
+* images/persona_2.png
+* images/persona_3.png
+* images/persona_4.png
 
 
 
@@ -77,15 +77,15 @@ Nesse momento, vamos transformar os insights e validações obtidos em soluçõe
 
 Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
-* [Histórias de usuários pt-1](images/historias-de-usuarios_pt1.png)
-* [Histórias de usuários pt-2](images/historias-de-usuarios_pt2.png)
+* images/historias-de-usuarios_pt1.png
+* images/historias-de-usuarios_pt2.png
 
 ## Proposta de Valor
 
-* [Proposta de valor persona 1](images/proposta-de-valor_1.png)
-* [Proposta de valor persona 2](images/proposta-de-valor_2.png)
-* [Proposta de valor persona 3](images/proposta-de-valor_3.png)
-* [Proposta de valor persona 4](images/proposta-de-valor_4.png)
+* images/proposta-de-valor_1.png
+* images/proposta-de-valor_2.png
+* images/proposta-de-valor_3.png
+* images/proposta-de-valor_4.png
 
 ## Requisitos
 
