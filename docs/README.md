@@ -49,23 +49,23 @@ Moradores de areas rurais, moradores de cidade muito pequenas e grandes e pequen
 
 ## Etapa de Entendimento
 
-* images/matriz-de-alinhamento-CSD.png
-* images/mapa-de-stakeholders.png
-* images/entrevista_1.png
-* images/entrevista_2.png
-* images/entrevista_3.png
-* images/entrevista_4.png
-* images/entrevista_5.png
-* images/entrevista_6.png
+* <img src="images/matriz-de-alinhamento-CSD.png">
+* <img src="images/mapa-de-stakeholders.png>"
+* <img src="images/entrevista_1.png">
+* <img src="images/entrevista_2.png">
+* <img src="images/entrevista_3.png">
+* <img src="images/entrevista_4.png">
+* <img src="images/entrevista_5.png">
+* <img src="images/entrevista_6.png">
 
 ## Etapa de Definição
 
 ### Personas
 
-* images/persona_1.png
-* images/persona_2.png
-* images/persona_3.png
-* images/persona_4.png
+* <img src="images/persona_1.png">
+* <img src="images/persona_2.png">
+* <img src="images/persona_3.png">
+* <img src="images/persona_4.png">
 
 
 
@@ -82,10 +82,10 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 ## Proposta de Valor
 
-* images/proposta-de-valor_1.png
-* images/proposta-de-valor_2.png
-* images/proposta-de-valor_3.png
-* images/proposta-de-valor_4.png
+* <img src="images/proposta-de-valor_1.png">
+* <img src="images/proposta-de-valor_2.png">
+* <img src="images/proposta-de-valor_3.png">
+* <img src="images/proposta-de-valor_4.png">
 
 ## Requisitos
 
