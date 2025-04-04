@@ -50,7 +50,7 @@ Moradores de areas rurais, moradores de cidade muito pequenas e grandes e pequen
 ## Etapa de Entendimento
 
 * <img src="images/matriz-de-alinhamento-CSD.png">
-* <img src="images/mapa-de-stakeholders.png>"
+* <img src="images/mapa-de-stakeholders.png">
 * <img src="images/entrevista_1.png">
 * <img src="images/entrevista_2.png">
 * <img src="images/entrevista_3.png">
@@ -77,8 +77,8 @@ Nesse momento, vamos transformar os insights e validações obtidos em soluçõe
 
 Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
-* images/historias-de-usuarios_pt1.png
-* images/historias-de-usuarios_pt2.png
+* <img src="images/historias-de-usuarios_pt1.png">
+* <img src="images/historias-de-usuarios_pt2.png">
 
 ## Proposta de Valor
 
