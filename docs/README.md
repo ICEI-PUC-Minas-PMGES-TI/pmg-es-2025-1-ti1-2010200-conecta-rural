@@ -95,25 +95,25 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 | ID     | Descrição do Requisito                                   | Prioridade |
 | ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Cadastro do usuario com email,CPF,Nome,Data de nascimento e etc | ALTA       |
+| RF-001 | O sistema deve permitir o cadastro de novos usuários por meio de um formulário | ALTA       |
 | RF-002 | Mostras os entregadores mais proximos para auxiliar nas entregas | BAIXA     |
-| RF-003 | Permitir os usuários avaliar os vendedores com base em estrelas ( 0 - mínimo; 5 - máximo) | MÉDIA       |
-| RF-004 | Ensinar os usuários ao usar o software dentro da própria aplicação | ALTA    |
-| RF-005 | Fornecer os relatórios das compras e vendas dos usuários no mês | BAIXO       |
-| RF-006 | Mostrar os locais de emprego na agricultura relacionado ao desejo do usuário | ALTA    |
-| RF-007 | Fazer uma interface similar ao Ifood e ao Instagram | ALTA       |
+| RF-003 | O sistema deve permitir que os usuários avaliem o vendedor | MÉDIA       |
+| RF-004 | O sistema deve oferecer tutoriais interativos, dicas e FAQs para guiar o usuário no uso da plataforma. | ALTA    |
+| RF-005 | O sistema deve gerar relatórios mensais de compras e vendas com resumo de valores, datas e estatísticas, disponíveis em PDF e CSV | BAIXO       |
+| RF-006 | O sistema deve exibir vagas de emprego na área agrícola de acordo com o perfil, localização e interesses do usuário. | ALTA    |
+| RF-007 | O sistema deve oferecer uma interface moderna, responsiva e fácil de usar, com foco em usabilidade, navegação fluida e exibição visual de produtos e perfis. | ALTA       |
 
 ### Requisitos não Funcionais
 
 | ID      | Descrição do Requisito                                                              | Prioridade |
 | ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 | O site deve ser responsivo, para atender a qualquer tipo de tela | ALTA    |
-| RNF-002 | O site deve utilizar o padrão de segurança HTTPS para passar segurança ao usuário e aos dados          | ALTA     |
-| RNF-003 | O design do site deve ser limpo e simples, para facilitar o uso de quem não tem prática de utilização | ALTA       |
-| RNF-004 | O site deve ser capaz de ser traduzido para outros idiomas | BAIXA     |
-| RNF-005 | O site pode permitir a personalização do conteúdo, como temas | BAIXA       |
-| RNF-006 | O site deve ser resistente a uma demanda alta de usuários  | MÉDIA    |
-| RNF-007 | O site deve utilizar cache para otimizar o tempo de carregamento de conteúdo estático  | MÉDIA    
+| RNF-001 | O sistema deve ser responsivo e adaptar sua interface para diferentes tamanhos de tela, incluindo dispositivos móveis, tablets e desktops. | ALTA    |
+| RNF-002 | O sistema deve utilizar o protocolo HTTPS para garantir a segurança na troca de dados entre o usuário e o servidor.          | ALTA     |
+| RNF-003 | O sistema deve adotar um design limpo, intuitivo e de fácil navegação. | ALTA       |
+| RNF-004 | O sistema deve permitir a tradução da interface para outros idiomas, com base na preferência do usuário. | BAIXA     |
+| RNF-005 | O sistema pode permitir a personalização da interface, como seleção de temas ou modo claro/escuro | BAIXA       |
+| RNF-006 | O sistema deve suportar picos de acesso simultâneo sem comprometer a performance ou estabilidade.  | MÉDIA    |
+| RNF-007 | O sistema deve utilizar cache para acelerar o carregamento de conteúdos estáticos e melhorar a experiência do usuário.  | MÉDIA    
 
 
 ## Projeto de Interface
