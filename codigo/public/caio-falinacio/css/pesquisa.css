@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: content-box;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+body{
+    background-color: red /*O padrão ainda será definido pela equipe*/
 }
 /*TRATAMENTO CABEÇALHO - INICIO*/
 .header{
@@ -13,9 +17,12 @@
     flex-wrap: wrap;
     background-color: green; /*O padrão ainda será definido pela equipe*/
 }
-.logo{
-    width: 40px;
-    height: 40px;
+.header .logo img{
+    width: 70px;
+    height: 70px;
+}
+.menu, .botoes{
+    margin-top: 26px;
 }
 .menu{
     margin-left: 40px;
@@ -26,17 +33,33 @@
     text-decoration: none;    
 }
 .menu a.ativo{
-    color: yellow;
+    color: yellow; /*O padrão ainda será definido pela equipe*/
+}
+.menu a.inativo:hover{
+color: yellow;
 }
 .botoes .botao{
-    background-color: darkgreen;
+    background-color: darkgreen; /*O padrão ainda será definido pela equipe*/
     color: white;
     padding: 6px 12px;
     border-radius: 10px;
     text-decoration: none;
     margin-left: 10px;
 }
+.botao:hover{
+    color:yellow;
+}
 /*TRATAMENTO CABEÇALHO - FIM*/
+
+
+.caixa-pesquisa .pesquisa-texto{
+    margin-top: 8px;
+    margin-left: 6px;
+}
+.caixa-pesquisa .botao-pesquisa img{
+width: 24px;
+height: 22px;
+}
 
 /*TRATAMENTO RODAPE - INICIO*/
 .footer{
@@ -49,6 +72,7 @@ bottom: 0;
 width: 100%;
 font-size: 14px;
 position: fixed;
+height: 100px;
 }
 .footer .links-rodape{
     padding: 10px;
@@ -56,7 +80,9 @@ position: fixed;
 .footer .links-rodape a{
 color: white;
 text-decoration: none;
-font-size: 14px; 
 margin: 0 10px;
+}
+.footer .links-rodape a:hover{
+    color: yellow;
 }
 /*TRATAMENTO RODAPE - FIM*/
