@@ -75,69 +75,49 @@ footer{
     margin: 5px;
 }
 /*Login e Cadastro*/
-.auth-container{
-    position: relative;
-    min-height: 500px;
-    padding-top: 40px;
-    margin-bottom: 100px;
-}
-.form-box{
+.modal {
     display: none;
-    position: absolute;
-    top: 40px;
+    position: fixed;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
-    background-color:#168a06;
+    z-index: 99;
+    background-color: #168a06;
     padding: 30px;
-    border-radius: 25px;
-    width: 320px;
-    z-index: 10;
-}
-#login:target,
-#cadastro:target{
-    display: block;
-}
-input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
     border-radius: 20px;
-    border: none;
-    font-size: 16px;
+    box-shadow: 0 0 10px #0004;
 }
 
-.dupla {
+#login:target,
+#cadastro:target {
+    display: block;
+}
+
+.form-box form {
     display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
-.dupla input {
-    width: 100%;
+.form-box input,
+.form-box textarea,
+.form-box button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
 }
 
-.botao-form {
+.form-box button {
     background-color: #0a5500;
     color: white;
     font-weight: bold;
-    padding: 10px 20px;
-    margin-top: 15px;
-    border: none;
-    border-radius: 20px;
     cursor: pointer;
-    width: 100%;
-}
-
-.logo-login {
-    width: 50px;
-    margin-top: 10px;
 }
 
 .fechar {
-    display: block;
-    margin-top: 15px;
     text-align: center;
+    margin-top: 10px;
     color: white;
     text-decoration: underline;
 }
-
-
