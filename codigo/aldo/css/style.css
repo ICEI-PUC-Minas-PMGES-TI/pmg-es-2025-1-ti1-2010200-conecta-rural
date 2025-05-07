@@ -83,10 +83,14 @@ footer{
     transform: translateX(-50%);
     z-index: 99;
     background-color: #168a06;
-    padding: 30px;
+    padding: 40px 50px;
     border-radius: 20px;
     box-shadow: 0 0 10px #0004;
+    width: 400px;
+    max-width: 90%;
+    height: 500px;
 }
+
 
 #login:target,
 #cadastro:target {
@@ -120,4 +124,14 @@ footer{
     margin-top: 10px;
     color: white;
     text-decoration: underline;
+}
+.logo-centro {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.logo-centro img {
+    width: 60px; 
+    height: auto;
 }
