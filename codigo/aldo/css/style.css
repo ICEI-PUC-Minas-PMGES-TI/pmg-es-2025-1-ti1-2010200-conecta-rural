@@ -5,33 +5,57 @@ body{
 }
 /*Navbar*/
 
-.navbar{
-    background-color: #168a06;
+/*cabeçalho, rodapé*/
+header{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px 40px;
-    color: white;
+    align-items: center;
+    position: relative;
 }
-.navbar nav a{
-    margin: 0 10px;
-    text-decoration: none;
+
+.logo img{
+    width: 100px;
+    margin-top: 8px;
+    justify-self: start;
+}
+.menu{
+    display: flex;
+    gap: 25px;
+    justify-items: center;
+    position: absolute;
+    left: 38%;
+}
+
+.menu a{
     color: white;
     font-weight: bold;
 }
-.nav-buttons .btn{
-    background-color: #004d00;
+
+header{
+    background-color: #168a06;
     color: white;
-    border: none;
+    text-align: center;
+    max-height: 90px;
+}
+
+.botoes-login{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.entrar, .cadastrar{
     padding: 8px 16px;
-    margin-left: 10px;
-    border-radius: 20px;
-    cursor: pointer;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #0a5500;
+    margin-right: 10px;
 }
-.logo
-{
-    height: 80px;
-}
+
+
+
+
 
 /*footer*/
 
