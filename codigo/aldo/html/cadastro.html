@@ -1,56 +1,89 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConectaRural - login</title>
-    <link rel="stylesheet" href="/codigo/aldo/css/style.css">
-</head>
-<body>
-    <!--navbar-->
-    <header>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ConectaRural - login</title>
+        <link rel="stylesheet" href="/codigo/aldo/css/style.css">
+    </head>
+    <body>
+        <!--navbar-->
+        <header>
 
-        <div class="logo">
-        <h1>
-            <a href="home.html"><img src="/codigo/aldo/img/logo conectarural branco.png" alt="logocr">
-        </a>
-    </h1>
-    
-        </div>
-    
-         <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">Mercado</a>
-            <a href="#">Cursos</a>
-            <a href="#">Empregos</a>
-    
-         </nav>
-    
-         <div class="botoes-login">
-            <a href="#" class="entrar">Entrar</a>
-            <a href="#" class=" cadastrar">Cadastrar</a>
-        </div>
-    
-    </header>
-    
-
-    
-
-    <!--footer-->
-
-    <footer>
-        <div class="footer-content">
-            <div>
-                <strong>Redes Sociais</strong><br>
-                📷 Conecta_Rural<br>
-                📘 Conecta_Rural
+            <div class="logo">
+            <h1>
+                <a href="home.html"><img src="/codigo/aldo/img/logo conectarural branco.png" alt="logocr">
+            </a>
+        </h1>
+        
             </div>
-            <div>Sobre nós</div>
-            <div>Mais informações</div>
-        </div>
-    </footer>
+        
+            <nav class="menu">
+                <a href="#">Home</a>
+                <a href="#">Mercado</a>
+                <a href="#">Cursos</a>
+                <a href="#">Empregos</a>
+        
+            </nav>
+        
+            <div class="botoes-login">
+                <a href="#" class="entrar">Entrar</a>
+                <a href="#" class=" cadastrar">Cadastrar</a>
+            </div>
+        
+        </header>
+      
+        
+        <main class="auth-container">
+            <!--Parte do login-->
+            <div class="login-box">
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Senha" required>
+                    <img src="/codigo/aldo/img/logo conectarural branco.png" alt="logo" class="logo-login">
+                    <button type="submit" class="botao-form">Entrar</button>
+                </form>
+            </div>
+           
+            <!--Parte do Cadastro-->
+            <div class="cadastro-box">
+                <form>
+                    <div class="dupla">
+                        <input type="text" placeholder="Nome" required>
+                        <input type="text" placeholder="CEP" required>
+                    </div>
+                    <div class="dupla">
+                        <input type="number" placeholder="Idade" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="dupla">
+                        <input type="text" placeholder="CPF" required>
+                        <input type="password" placeholder="Senha" required>
+                    </div>
+                    <input type="text" placeholder="Biografia">
+                    <button type="submit" class="botao-form">Cadastrar</button>
+                </form>
+            </div>
+        </main>
+        
+
+        
+
+        <!--footer-->
+
+        <footer>
+            <div class="footer-content">
+                <div>
+                    <strong>Redes Sociais</strong><br>
+                    📷 Conecta_Rural<br>
+                    📘 Conecta_Rural
+                </div>
+                <div>Sobre nós</div>
+                <div>Mais informações</div>
+            </div>
+        </footer>
 
 
 
-</body>
-</html>
+    </body>
+    </html>
