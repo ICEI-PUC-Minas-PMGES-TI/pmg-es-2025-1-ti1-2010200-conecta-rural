@@ -31,11 +31,23 @@
         </div>
     </header>
 
+    <div class="area-pesquisa">
     <div class="caixa-pesquisa">
         <input type="text" class="pesquisa-texto" placeholder="O que você procura?">
         <button class="botao-pesquisa">
             <img src="img/lupa-pesquisa.png"> 
         </button>
+      </div>
+
+        <div class="filtro-pesquisa">
+            <label for="filtroSelect">Filtrar por:</label>
+            <select id="filtroSelect">
+              <option value="todos">Todos</option>
+              <option value="preco">Preço</option>
+              <option value="categoria">Categoria</option>
+              <option value="avaliacao">Avaliação</option>
+            </select>
+          </div>
     </div>
 
     <section id="produtos" class="grid"></section>

@@ -50,13 +50,20 @@ color: yellow;
     color:yellow;
 }
 /*TRATAMENTO CABEÇALHO - FIM*/
-
-
-.caixa-pesquisa .pesquisa-texto{
-    margin-top: 8px;
-    margin-left: 6px;
+.area-pesquisa{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 8px;
+    padding: 6px;
 }
-.caixa-pesquisa .botao-pesquisa img{
+.filtro-pesquisa{
+    margin-top: 8px;
+}
+.area-pesquisa .pesquisa-texto{
+    margin-top: 8px;
+}
+.area-pesquisa .botao-pesquisa img{
 width: 24px;
 height: 22px;
 }
