@@ -29,7 +29,64 @@
 <!--cabeçalho final-->
 <body>
     <main class="cadastro-curso">
+        <h1>Cadastrar Novo Curso</h1>
         
+        <form class="formulario-curso">
+            <div class="formulario">
+                <label for="titulo">Titulo do Curso:</label>
+                <input type="text" id="titulo" name="titulo" required>
+            </div>
+            
+            <div class="formulario">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecione...</option>
+                    <option value="redes-sociais">Redes Sociais</option>
+                    <option value="vendas">Vendas Online</option>
+                    <option value="producao">Produção de Conteúdo</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            
+            <div class="formulario">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+            </div>
+            
+            <div class="formulario">
+                <label for="duracao">Duração (horas):</label>
+                <input type="number" id="duracao" name="duracao" min="1" required>
+            </div>
+            
+            <div class="formulario">
+                <label for="imagem">Imagem do Curso:</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*">
+            </div>
+            
+            <div class="formulario">
+                <label for="instrutor">Instrutor:</label>
+                <input type="text" id="instrutor" name="instrutor" required>
+            </div>
+            
+            <div class="formulario">
+                <label for="dificuldade">Nível de Dificuldade:</label>
+                <div class="nivel">
+                    <label><input type="radio" name="dificuldade" value="iniciante" required> Iniciante</label>
+                    <label><input type="radio" name="dificuldade" value="intermediario"> Intermediário</label>
+                    <label><input type="radio" name="dificuldade" value="avancado"> Avançado</label>
+                </div>
+            </div>
+            
+            <div class="formulario">
+                <label for="modulos">Módulos (separados por vírgula):</label>
+                <textarea id="modulos" name="modulos" rows="3" placeholder="Ex: Introdução, Configuração, Publicação"></textarea>
+            </div>
+            
+            <div class="enviarcurso">
+                <button type="submit" class="enviar">Cadastrar Curso</button>
+                
+            </div>
+        </form>
     </main>
 
     <footer>

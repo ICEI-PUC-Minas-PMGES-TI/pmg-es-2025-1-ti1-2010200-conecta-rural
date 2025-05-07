@@ -89,6 +89,27 @@ footer a{
 }
 
 
+.cadastro-curso {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
 
+.cadastro-curso h1 {
+    color: #168a06;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.formulario-curso {
+    background: #f5fff5;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.formulario {
+    margin-bottom: 20px;
+}
 
 
