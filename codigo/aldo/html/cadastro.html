@@ -27,44 +27,41 @@
             </nav>
         
             <div class="botoes-login">
-                <a href="#" class="entrar">Entrar</a>
-                <a href="#" class=" cadastrar">Cadastrar</a>
+                <a href="#login" class="entrar">Entrar</a>
+                <a href="#cadastro" class=" cadastrar">Cadastrar</a>
             </div>
         
         </header>
       
         
-        <main class="auth-container">
-            <!--Parte do login-->
-            <div class="login-box">
+        <div id="login" class="modal">
+            <div class="form-box">
                 <form>
                     <input type="email" placeholder="Email" required>
                     <input type="password" placeholder="Senha" required>
-                    <img src="/codigo/aldo/img/logo conectarural branco.png" alt="logo" class="logo-login">
-                    <button type="submit" class="botao-form">Entrar</button>
+                    <button type="submit">Entrar</button>
+                    <a href="#" class="fechar">Fechar</a>
                 </form>
             </div>
+        </div>
            
             <!--Parte do Cadastro-->
-            <div class="cadastro-box">
-                <form>
-                    <div class="dupla">
+            <div id="cadastro" class="modal">
+                <div class="form-box">
+                    <form>
                         <input type="text" placeholder="Nome" required>
                         <input type="text" placeholder="CEP" required>
-                    </div>
-                    <div class="dupla">
                         <input type="number" placeholder="Idade" required>
                         <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="dupla">
                         <input type="text" placeholder="CPF" required>
                         <input type="password" placeholder="Senha" required>
-                    </div>
-                    <input type="text" placeholder="Biografia">
-                    <button type="submit" class="botao-form">Cadastrar</button>
-                </form>
+                        <textarea placeholder="Biografia"></textarea>
+                        <button type="submit">Cadastrar</button>
+                        <a href="#" class="fechar">Fechar</a>
+                    </form>
+                </div>
             </div>
-        </main>
+        
         
 
         
