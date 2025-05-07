@@ -1,3 +1,44 @@
-html{
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(214, 255, 190);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main{
+    flex: 1;
+}
+
+header, footer {
+    background-color: #168a06;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+footer{
+    padding-top: 10px;
+}
+footer h1{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+footer h2{
+    display: flex;
+    font-size: small;
+    justify-content: center;
+}
+
+
+.cursos{
+    display: flex;
+    justify-content: space-around;
+    
 }
