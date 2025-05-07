@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+body{
+    background-color: red /*O padrão ainda será definido pela equipe*/
+}
+/*TRATAMENTO CABEÇALHO - INICIO*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: green; /*O padrão ainda será definido pela equipe*/
+}
+.header .logo img{
+    width: 70px;
+    height: 70px;
+}
+.menu, .botoes{
+    margin-top: 26px;
+}
+.menu{
+    margin-left: 40px;
+}
+.menu a{
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;    
+}
+.menu a.ativo{
+    color: yellow; /*O padrão ainda será definido pela equipe*/
+}
+.menu a.inativo:hover{
+color: yellow;
+}
+.botoes .botao{
+    background-color: darkgreen; /*O padrão ainda será definido pela equipe*/
+    color: white;
+    padding: 6px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.botao:hover{
+    color:yellow;
+}
+/*TRATAMENTO CABEÇALHO - FIM*/
+.area-pesquisa{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 8px;
+    padding: 6px;
+}
+.filtro-pesquisa{
+    margin-top: 8px;
+}
+.area-pesquisa .pesquisa-texto{
+    margin-top: 8px;
+}
+.area-pesquisa .botao-pesquisa img{
+width: 24px;
+height: 22px;
+}
+
+/*TRATAMENTO RODAPE - INICIO*/
+.footer{
+background-color: #207a1e;
+color: white;
+display: flex;
+justify-content: space-around;
+padding: 15px 0;
+bottom: 0;
+width: 100%;
+font-size: 14px;
+position: fixed;
+height: 100px;
+}
+.footer .links-rodape{
+    padding: 10px;
+}
+.footer .links-rodape a{
+color: white;
+text-decoration: none;
+margin: 0 10px;
+}
+.footer .links-rodape a:hover{
+    color: yellow;
+}
+/*TRATAMENTO RODAPE - FIM*/
