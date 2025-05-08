@@ -94,8 +94,7 @@ footer a p{
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    justify-content: center;
-    align-items: center;
+    grid-gap: 10px;
 
 }
 
@@ -110,6 +109,7 @@ footer a p{
     margin-bottom: 200px;
     display: grid;
     place-items: center;
+    margin-left: 15px;
 }
 
 .imagemp{
@@ -129,6 +129,7 @@ footer a p{
     width: 700px;
     margin-top: 150px;
     margin-bottom: 200px;
+    margin-right: 20px;
 }
 
 .descricao p{
@@ -156,3 +157,6 @@ footer a p{
     font-size: 25px;
 
 }
+
+
+
