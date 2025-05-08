@@ -199,3 +199,32 @@ header {
     border-radius: 5px;
 }
 
+header, footer {
+    background-color: #168a06;
+    color: white;
+    text-align: center;
+    max-height: 90px;
+}
+footer{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+footer img{
+    width: 18px;
+}
+footer h1{  
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    text-decoration: underline;
+}
+footer h2{
+    display: flex;
+    font-size: small;
+    justify-content: center;
+}
+
+footer a{
+    color: white;
+}
+
