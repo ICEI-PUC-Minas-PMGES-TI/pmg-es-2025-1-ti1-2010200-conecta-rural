@@ -1,0 +1,185 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(214, 255, 190);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    flex: 1;
+}
+/**cabeçalho, rodapé**/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo img{
+    width: 100px;
+    margin-top: 8px;
+    justify-self: start;
+}
+.menu{
+    display: flex;
+    gap: 25px;
+    justify-items: center;
+    position: absolute;
+    left: 38%;
+}
+
+.menu a{
+    color: white;
+    font-weight: bold;
+}
+
+header, footer {
+    background-color: #168a06;
+    color: white;
+    text-align: center;
+    max-height: 90px;
+}
+footer{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+footer img{
+    width: 18px;
+}
+footer h1{  
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    text-decoration: underline;
+}
+footer h2{
+    display: flex;
+    font-size: small;
+    justify-content: center;
+}
+
+footer a{
+    color: white;
+}
+
+.botoes-login{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.entrar, .cadastrar{
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #0a5500;
+    margin-right: 10px;
+}
+
+
+/** fim cabeçalho,rodapé **/
+
+.cursos {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 40px; 
+    flex-wrap: wrap;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.coluna h1 {
+    background-color: #7aff75;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+    border: 2px solid #0a5500;
+}
+
+.caixas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.itemcurso {
+    background: #168a06;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.itemcurso img{
+    width: 100px;
+    padding-top: 10px;
+    display: flex;
+    justify-self: center;
+}
+
+.itemcurso h2 {
+    margin: 0;
+    color: white;
+    font-size: medium;
+    text-align: center;
+}
+
+.sabermais{
+    display: block;
+    text-align: center;
+    color:white;
+    background-color: rgb(27, 117, 0);
+    font-size: small;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.barrapesquisa {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.barrapesquisa input {
+    padding: 8px 12px;
+    border: 1px solid rgb(27, 117, 0);
+    border-radius: 15px 0 0 15px;
+    width: 150px;
+}
+
+.ok {
+    padding: 8px 15px;
+    background-color: #0a5500;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+}
+
+.cadastrar-curso {
+    background-color: #0a5500 ;
+    color: white;
+    padding-top: 10px;
+    padding: 8px 15px;
+    border-radius: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #0a5500;
+    margin-top: 10px;
+}
