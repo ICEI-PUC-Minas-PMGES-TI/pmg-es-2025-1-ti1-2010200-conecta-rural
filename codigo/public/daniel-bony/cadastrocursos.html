@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar curso</title>
+    <link rel="stylesheet" href="cursoscad.css">
+</head>
+<!--cabeçalho inicio-->
+<header>
+    <div class="logo">
+        <h1>
+            <a href="home.html"><img src="imagens/logocrbranco.png" alt="logocr"></a>
+        </h1>
+    </div>
+
+    <nav class="menu">
+        <a href="home.html">Home</a>
+        <a href="mercado.html">Mercado</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="Empregos">Empregos</a>
+    </nav>
+
+    <div class="botoes-login">
+        <a href="#" class="entrar">Entrar</a>
+        <a href="#" class="cadastrar">Cadastrar</a>
+    </div>
+</header>
+<!--cabeçalho final-->
+<body>
+    <main class="cadastro-curso">
+        <h1>Cadastrar Novo Curso</h1>
+        
+        <form class="formulario-curso">
+            <div class="formulario">
+                <label for="titulo">Titulo do Curso:</label>
+                <input type="text" id="titulo" name="titulo" required>
+            </div>
+            
+            <div class="formulario">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecione...</option>
+                    <option value="redes-sociais">Redes Sociais</option>
+                    <option value="vendas">Vendas Online</option>
+                    <option value="producao">Produção de Conteúdo</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            
+            <div class="formulario">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+            </div>
+            
+            <div class="formulario">
+                <label for="duracao">Duração (horas):</label>
+                <input type="number" id="duracao" name="duracao" min="1" required>
+            </div>
+            
+            <div class="formulario">
+                <label for="imagem">Imagem do Curso:</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*">
+            </div>
+            
+            <div class="formulario">
+                <label for="instrutor">Instrutor:</label>
+                <input type="text" id="instrutor" name="instrutor" required>
+            </div>
+            
+            <div class="formulario">
+                <label for="dificuldade">Nível de Dificuldade:</label>
+                <div class="nivel">
+                    <label><input type="radio" name="dificuldade" value="iniciante" required> Iniciante</label>
+                    <label><input type="radio" name="dificuldade" value="intermediario"> Intermediário</label>
+                    <label><input type="radio" name="dificuldade" value="avancado"> Avançado</label>
+                </div>
+            </div>
+            
+            <div class="formulario">
+                <label for="modulos">Módulos (separados por vírgula):</label>
+                <textarea id="modulos" name="modulos" rows="3" placeholder="Ex: Introdução, Configuração, Publicação"></textarea>
+            </div>
+            
+            <div class="enviarcurso">
+                <button type="submit" class="enviar">Cadastrar Curso</button>
+                
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <h1>Contatos</h1>
+        <h2><a href="#"><img src="imagens/instalogo.png" alt="instagramlogo"></a></h2>
+        <h2><a href="#"><img src="imagens/facebooklogo.png" alt="facebooklogo"></a></h2>
+    </footer>
+</body>
+</html>
