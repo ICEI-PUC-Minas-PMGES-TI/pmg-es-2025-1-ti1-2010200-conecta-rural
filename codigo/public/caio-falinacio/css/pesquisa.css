@@ -70,10 +70,10 @@ color: yellow;
 .filtro-pesquisa{
     margin-top: 8px;
 }
-.area-pesquisa .pesquisa-texto{
+.area-pesquisa #pesquisa-texto{
     margin-top: 8px;
 }
-.area-pesquisa .botao-pesquisa img{
+.area-pesquisa #botao-pesquisa img{
 width: 24px;
 height: 22px;
 }

@@ -1,4 +1,5 @@
-
+const pesquisa = document.querySelector('input#pesquisa-texto');
+const botaoPesquisa = document.querySelector('button#botao-pesquisa');
 const dados = [
   {
     "id": 1,
@@ -212,4 +213,20 @@ const dados = [
     ]
   }
 ]
+
+function filtrarProdutos(){
+    const input = document.querySelector('input#pesquisa-texto').value.toLowerCase();
+    const caixa = document.querySelectorAll('div.caixa-produto');
+    caixa.forEach(card => {
+    const textoCard = card.innerText.toLowerCase();
+    if (textoCard.includes(input)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+
+botaoPesquisa.addEventListener('click', filtrarProdutos);
+pesquisa.addEventListener('keyup', filtrarProdutos);
 
