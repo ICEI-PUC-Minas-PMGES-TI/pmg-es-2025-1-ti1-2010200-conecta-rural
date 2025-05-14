@@ -1,65 +1,68 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-body{
+body {
     background-color: rgb(214, 255, 190);
     height: 100%;
+    font-family: Arial, sans-serif;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-}
-
-.logo img{
-    width: 100px;
-    margin-top: 8px;
-    justify-self: start;
-}
-.menu{
-    display: flex;
-    gap: 25px;
-    justify-items: center;
-    position: absolute;
-    left: 38%;
-}
-
-.menu a{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-header{
     background-color: #168a06;
     color: white;
-    text-align: center;
+    padding: 10px 50px;
     max-height: 90px;
 }
 
-
-.botoes-login{
-    display: flex;
-    gap: 10px;
-    margin-left: auto;
+.logo img {
+    width: 100px;
+    margin-top: 8px;
 }
 
-.botoes-login a{
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+.botoes-login {
+    display: flex;
+    gap: 10px;
+}
+
+.botoes-login a {
     text-decoration: none;
 }
 
-.entrar, .cadastrar{
+.entrar, .cadastrar {
     padding: 8px 16px;
-    border-radius: 15px;
+    border-radius: 25px;
     font-weight: bold;
     color: white;
     background-color: #0a5500;
     margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.entrar:hover, .cadastrar:hover {
+    background-color: #2a7d30;
 }
 
 footer{
