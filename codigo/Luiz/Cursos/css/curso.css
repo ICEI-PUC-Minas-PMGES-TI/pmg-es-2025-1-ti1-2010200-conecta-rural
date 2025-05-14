@@ -94,6 +94,7 @@ header {
 
 .descricao-video h2 {
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .descricao-video p {

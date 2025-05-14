@@ -10,6 +10,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -65,7 +66,8 @@ header {
     background-color: #2a7d30;
 }
 
-footer{
+/* FOOTER */
+footer {
     background-color: #168a06;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -73,27 +75,28 @@ footer{
     padding-bottom: 60px;
 }
 
-.redes{
+.redes {
     grid-column: 1;
 }
 
-footer h3{
+footer h3 {
     margin-top: 10px;
     margin-left: 10px;
     color: white;
     margin-bottom: 8px;
 }
 
-footer a{
+footer a {
     text-decoration: none;
 }
 
-footer a p{
+footer a p {
     margin-left: 15px;
     color: white;
 }
 
-.compras{
+/* CONTEÚDO PRINCIPAL */
+.compras {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
@@ -101,43 +104,39 @@ footer a p{
     margin: 0 auto;
     padding: 0 20px;
     max-width: 1200px;
-
 }
 
-.imagem{
+.imagem {
     grid-column: 1;
     grid-row: 1;
-    width: 430px;
-    height: 430px;
-    background-color: #0a5500;
     border-radius: 35px;
-    margin-top: 80px;
-    margin-bottom: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: grid;
     place-items: center;
     margin-left: 15px;
 }
 
-.imagemp{
+.imagemp {
     border-radius: 25px;
-    width: 400px;
+    width: 500px;
     height: 400px;
 }
 
-.descricao{
+.descricao {
     background-color: #0a5500;
     height: 400px;
     grid-column: 2;
     grid-row: 1;
     display: grid;
     border-radius: 20px;
-    width: 700px;
-    margin-top: 80px;
-    margin-bottom: 150px;
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-right: 20px;
 }
 
-.descricao p{
+.descricao p {
     color: white;
     margin-top: 25px;
     margin-left: 30px;
@@ -147,11 +146,11 @@ footer a p{
     max-width: 640px;
 }
 
-.descricao a{
+.descricao a {
     text-decoration: none;
 }
 
-.descricao a h3{
+.descricao a h3 {
     color: #0a5500;
     margin-left: 25px;
     margin-top: 15px;
@@ -163,9 +162,8 @@ footer a p{
     border-radius: 20px;
     width: 215px;
     text-align: center;
-    font-size: 25px;
-
 }
+
 
 
 

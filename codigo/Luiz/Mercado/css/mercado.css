@@ -127,13 +127,11 @@ footer a p{
 .descricao h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    text-transform: uppercase;
 }
 
 .descricao p {
     font-size: 18px;
     margin-bottom: 15px;
-    line-height: 1.5;
 }
 
 .descricao a{
