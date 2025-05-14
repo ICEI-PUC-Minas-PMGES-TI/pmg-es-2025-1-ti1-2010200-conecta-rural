@@ -48,25 +48,53 @@
             </div>
         </div>
            
-            <!--Parte do Cadastro-->
+            
             <div id="cadastro" class="modal">
                 <div class="form-box">
-                    <form>
-                        <input type="text" placeholder="Nome" required>
-                        <input type="text" placeholder="CEP" required>
-                        <input type="number" placeholder="Idade" required>
-                        <input type="email" placeholder="Email" required>
-                        <input type="text" placeholder="CPF" required>
-                        <input type="password" placeholder="Senha" required>
-                        <textarea placeholder="Biografia"></textarea>
-                        <div class="logo-centro">
-                            <img src="/codigo/aldo/img/logo conectarural branco.png" alt="Logo ConectaRural">
+                    <form id="cadastroForm">
+                        
+                        <div class="step" id="step1">
+                            <input type="text" placeholder="Nome" required>
+                            <input type="text" placeholder="Sobrenome" required>
+                            <input type="number" placeholder="Data de nascimento" required>
+                            <input type="text" placeholder="CPF" required>
+                            <textarea placeholder="Biografia"></textarea>
+                            <div class="logo-centro">
+                                <img src="../img/logo conectarural branco.png" alt="Logo ConectaRural">
+                            </div>
+                            <button type="button" onclick="nextStep(1)">Próximo</button>
                         </div>
-                        <button type="submit">Cadastrar</button>
+            
+                        
+                        <div class="step" id="step2" style="display:none;">
+                            <input type="email" placeholder="Email" required>
+                            <input type="password" placeholder="Senha" required>
+                            <div class="logo-centro">
+                                <img src="../img/logo conectarural branco.png" alt="Logo ConectaRural">
+                            </div>
+                            <button type="button" onclick="prevStep(1)">Voltar</button>
+                            <button type="button" onclick="nextStep(2)">Próximo</button>
+                        </div>
+            
+                    
+                        <div class="step" id="step3" style="display:none;">
+                            <input type="text" placeholder="CEP" required>
+                            <input type="text" placeholder="Rua" required>
+                            <input type="text" placeholder="Bairro" required>
+                            <input type="text" placeholder="Numero" required>
+                            <input type="text" placeholder="Complemento" required>
+                            <div class="logo-centro">
+                                <img src="../img/logo conectarural branco.png" alt="Logo ConectaRural">
+                            </div>
+                            <button type="button" onclick="prevStep(2)">Voltar</button>
+                            <button type="submit">Cadastrar</button>
+                        </div>
+            
                         <a href="#" class="fechar">Fechar</a>
                     </form>
                 </div>
             </div>
+            
         
         
 
@@ -87,6 +115,6 @@
         </footer>
 
 
-
+<script src="../js/cadastro.js"></script>
     </body>
     </html>
