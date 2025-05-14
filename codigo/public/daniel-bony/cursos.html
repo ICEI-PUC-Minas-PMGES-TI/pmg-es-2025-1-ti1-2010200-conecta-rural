@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conecta Rural</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detalhescur.css">
 </head>
 <!--cabeçalho inicio-->
 <header>
@@ -33,77 +33,32 @@
 </header>
 <!--cabeçalho final-->
 <body>
-    
+    <!--os cursos agr vao ser mostrados pelo app.js-->
     <main class="cursos">
 
         <section class="coluna">
+            <h1>Recomendados</h1>
+            <div class="caixas" id="recomendados"></div>
+        </section>
+        
+        <section class="coluna">
+            <h1>Mais vistos</h1>
+            <div class="caixas" id="maisvistos"></div>
+        </section>
+        
+        <section class="coluna">
+            <div class="barrapesquisa">
+                <input type="text" placeholder="Buscar...">
+                <button class="ok">OK</button>
 
-    <h1>Recomendados</h1>
-    <div class="caixas">
-    <div class="itemcurso">
-    <h2>Como utilizar o instagram</h2><img src="imagens/instalogo.png" alt="instagramlogo">
-    <a href="#" class="sabermais">Saber mais</a>
-    </div>
+            </div>
+            <a href="cadastrocursos.html" class="cadastrar-curso">Cadastrar cursos</a>
+            <h1>Redes sociais</h1>
+            <div class="caixas" id="redessociais"></div>
+        </section>
+        
 
-<div class="itemcurso">
-    <h2>Como otimizar suas vendas online</h2>
-    <img src="imagens/logocrbranco.png" alt="logocr">
-    <a href="#" class="sabermais">Saber mais</a>
-</div>
-</div>
-</section>
-
-<section class="coluna">
-
-    <h1>Mais vistos</h1>
-    <div class="caixas">
-    <div class="itemcurso">
-    <h2>Como gravar videos para o youtube</h2>
-    <img src="imagens/youtubelogo.png" alt="youtubelogo">
-    <a href="#" class="sabermais">Saber mais</a>
-    </div>
-
-    <div class="itemcurso">
-    <h2>Como criar conta no instagram</h2>
-    <img src="imagens/instalogo.png" alt="instagramlogo">
-    <a href="#" class="sabermais">Saber mais</a>
-    </div>
-</div>
-</section>
-
-<section class="coluna">
-
-    <div class="barrapesquisa">
-        <input type="text" placeholder="Buscar...">
-        <button class="ok">OK</button>
-    </div>
-
-<!--botao de adicionar cursos-->
-    <a href="cadastrocursos.html" class="cadastrar-curso">Cadastrar Cursos</a>
-
-    <h1>Redes sociais</h1>
-    <div class="caixas">
-    <div class="itemcurso">
-    <h2>Instagram</h2>
-    <img src="imagens/instalogo.png" alt="instagramlogo">
-    <a href="#" class="sabermais">Saber mais</a>
-    </div>
-
-    <div class="itemcurso">
-    <h2>Facebook</h2>
-    <img src="imagens/facebooklogo.png" alt="facebooklogo">
-    <a href="#" class="sabermais">Saber mais</a>
-    </div>
-
-    <div class="itemcurso">
-    <h2>Conecta rural</h2>
-    <img src="imagens/logocrbranco.png" alt="logocr">
-    <a href="#" class="sabermais">Saber mais</a>
-    </div>
-</div>
-</section>
-
-</main>
+    </main>
 
     <footer>
         <h1>Contatos</h1>
@@ -112,6 +67,6 @@
         
 
     </footer>
-    
+    <script src="app.js"></script>
 </body>
 </html>
