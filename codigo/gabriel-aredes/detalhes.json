@@ -1,0 +1,115 @@
+{
+  "id": 1,
+  "nome": "Tomates Orgânicos",
+  "descricao": "Tomate orgânico, cultivado com todo o cuidado e carinho, direto da Fazenda Nilton Santos. Ideal a qualquer receita, totalmente ivre de agrotóxicos.",
+  "preco": 9.76,
+  "unidade": "kg",
+  "disponivel": true,
+  "informacoes_nutricionais": {
+    "calorias": "18 kcal (100g)",
+    "carboidratos": "3.9g",
+    "proteinas": "0.9g",
+    "fibras": "1.2g",
+    "vitaminaC": "13.7mg"
+  },
+  "categoria": "Verduras e Legumes",
+  "imagens": [
+    "tomate1.jpg",
+    "tomate2.jpg"
+  ],
+  "produtor": {
+    "nome": "Guilherme Arealdo",
+    "propriedade": "Fazenda Nilton Santos",
+    "localizacao": "Zona Rural de Nova Esperança - MG"
+  },
+  "avaliacoes": [
+    {
+      "usuario": "Miguel Torres",
+      "comentario": "Tomate super fresco! Chegou rápido.",
+      "nota": 5
+    },
+    {
+      "usuario": "Luiza Alves",
+      "comentario": "Muito saboroso. Recomendo.",
+      "nota": 4
+    }
+  ]
+},
+{
+  "id": 2,
+  "nome": "Ovos Caipiras",
+  "descricao": "Ovos caipiras fresquinhos, de galinhas criadas soltas, comendo ração natural. Perfeitos para o café da manhã ou qualquer receita.",
+   "preço": 14.31,
+  "unidade": "bandeja",
+  "disponivel": true,
+  "informacoes_nutricionais": {
+    "calorias": "155 kcal (100g)",
+    "carboidratos": "1.1g",
+    "proteinas": "12.6g",
+    "fibras": "0g",
+    "vitaminaD": "37 IU"
+  },
+  "categoria": "Laticínios e Ovos",
+  "imagens": [
+    "ovos1.jpg",
+    "ovos2.jpg"
+  ],
+  "produtor": {
+    "nome": "Carmen Rosa Aveiro",
+    "propriedade": "Fazenda Aras do Norte",
+    "localizacao": "Três Marias - MG"
+  },
+  "avaliacoes": [
+    {
+      "usuario": "Odete Valadão",
+      "comentario": "Nenhum ovo chegou estragado! Recomendo a todos que buscam qualidade.",
+      "nota": 5
+    },
+    {
+      "usuario": "Roger Machado de Assis",
+      "comentario": "Compro com eles recorrentemente, e nunca me deixaram na mão.",
+      "nota": 4.5
+    }
+  ]
+},
+{
+  "id": 3,
+  "nome": "Contra filé",
+  "descricao": "Corte bovino extremamente macio e saboroso, com o gado utilizado tratado da melhor forma",
+  "preco": 45.98,
+  "unidade": "kg",
+  "disponivel": true,
+  "informacoes_nutricionais": {
+  "calorias": "242 kcal",
+  "carboidratos": "0g",
+  "proteinas": "26g",
+  "gorduras_totais": "15g",
+  "gorduras_saturadas": "6g",
+  "gorduras_trans": "0.5g",
+  "colesterol": "80mg",
+  "vitaminaB12": "2.0µg"
+},
+  "categoria": "Açougue",
+  "imagens": [
+    "file1.jpg",
+    "file1.jpg"
+  ],
+  "produtor": {
+    "nome": "Jaerci Carvalho",
+    "propriedade": "Fazenda Predo Areades",
+    "localizacao": "Bom Despacho - MG"
+  },
+  "avaliacoes" [
+    {
+    "usuario": "Rosa Martínez",
+    "comentario": "A carne mais fresca da região! Sempre está na minha lista do mês.",
+    "nota": 5.0
+    },
+    {
+      "usuario": "Abraaão Goytacazes",
+      "comentario": "O corte mais gostoso da região, carne muito bem tratada.",
+      "nota": 5.0
+    }
+  ]
+},
+
