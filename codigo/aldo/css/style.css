@@ -78,18 +78,21 @@ footer{
 .modal {
     display: none;
     position: fixed;
-    top: 80px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     z-index: 99;
-    background-color: #168a06;
+    background-color: rgb(214, 255, 190);
     padding: 40px 50px;
     border-radius: 20px;
-    box-shadow: 0 0 10px #0004;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
     width: 400px;
     max-width: 90%;
-    height: 500px;
+    max-height: 80%;
+    overflow-y: auto;
+    height: 300px;
 }
+
 
 
 #login:target,
@@ -132,6 +135,6 @@ footer{
 }
 
 .logo-centro img {
-    width: 60px; 
+    width: 80px; 
     height: auto;
 }
