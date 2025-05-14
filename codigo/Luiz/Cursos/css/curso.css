@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(214, 255, 190);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #168a06;
+    color: white;
+    max-height: 90px;
+}
+
+.logo img {
+    width: 100px;
+    margin-top: 8px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    left: 38%;
+}
+
+.menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.botoes-login {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+.entrar, .cadastrar {
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #0a5500;
+    text-decoration: none;
+}
+
+.conteudo-video {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 80px auto 150px auto;
+    padding: 0 20px;
+    align-items: start;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    background-color: #0a5500;
+}
+
+.descricao-video {
+    background-color: #0a5500;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    max-width: 500px;
+    max-height: 800px;
+    overflow: hidden;
+}
+
+.descricao-video h2 {
+    margin-bottom: 15px;
+}
+
+.descricao-video p {
+    font-size: 18px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+footer {
+    background-color: #168a06;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 60px;
+}
+
+footer h3 {
+    margin: 10px;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a p {
+    margin-left: 15px;
+    color: white;
+}
