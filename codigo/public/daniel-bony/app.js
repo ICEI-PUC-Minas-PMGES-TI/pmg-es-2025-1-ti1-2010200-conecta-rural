@@ -43,10 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const div = document.createElement('div');
             div.className = 'itemcurso';
             div.innerHTML = `
-                <h2>${curso.titulo}</h2>
-                <img src="${curso.imagem}" alt="${curso.titulo}">
-                <a href="#" class="sabermais">Saber mais</a>
-            `;
+             <h2>${curso.titulo}</h2>
+             <img src="${curso.imagem}" alt="${curso.titulo}">
+             <a href="detalhescursos.html?curso=${encodeURIComponent(curso.titulo)}" class="sabermais">Saber mais</a>
+             `;
+
+
             container.appendChild(div);
         });
     }
