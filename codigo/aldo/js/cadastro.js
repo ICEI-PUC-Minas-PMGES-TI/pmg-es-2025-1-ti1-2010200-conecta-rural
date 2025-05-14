@@ -1,14 +1,16 @@
-// cadastro.js
-
 function showStep(stepNumber) {
- 
     const steps = document.querySelectorAll('.step');
     steps.forEach(step => step.style.display = 'none');
 
-    
     const currentStep = document.getElementById(`step${stepNumber}`);
     if (currentStep) {
         currentStep.style.display = 'flex';
+    }
+
+    // Voltar o scroll do formulário para o topo
+    const formBox = document.querySelector('.modal:target');
+    if (formBox) {
+        formBox.scrollTop = 0;
     }
 }
 
@@ -22,7 +24,6 @@ function prevStep(current) {
     showStep(previous);
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("cadastroForm");
 
@@ -33,4 +34,3 @@ document.addEventListener("DOMContentLoaded", function () {
         showStep(1); 
     });
 });
-
