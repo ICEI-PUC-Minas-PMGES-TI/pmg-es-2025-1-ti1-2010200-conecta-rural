@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="detalhes.css">
     <title>Conecta Rural</title>
 </head>
 <body>
-    
+        <header>
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logocrbranco.png" alt="logocr">
+            </a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="mercado.html">Mercado</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="empregos.html">Empregos</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-login">
+            <button class="entrar">Entrar</button>
+            <button class="cadastrar">Cadastrar</button>
+        </div>
+    </header>
+
+<main>
+        <section id="detalhe-produto">
+        <div class="imagem-produto">
+            <img id="imagem-principal" src="imagens/produto_padrao.jpg" alt="Imagem Principal do Produto">
+            <div class="imagens-secundarias">
+                </div>
+        </div>
+        <div class="info-produto">
+            <h1 id="nome-produto">Nome do Produto</h1>
+            <p class="preco">R$ <span id="preco-produto">0,00</span> / <span id="unidade">Unidade</span></p>
+            <p class="disponibilidade">Disponibilidade: <span id="disponibilidade-produto"></span></p>
+
+            <div class="descricao">
+                <h2>Descrição</h2>
+                <p id="descricao-produto">Aqui vai a descrição detalhada do produto.</p>
+            </div>
+
+            <div class="produtor">
+                <h2>Produtor</h2>
+                <p id="nome-produtor">Nome do Produtor</p>
+                <p id="localizacao-produtor">Localização: <span id="local-produtor"></span></p>
+                <p>Contato: <span id="contato-produtor"></span></p>
+            </div>
+
+            <div class="detalhes">
+                <h2>Detalhes</h2>
+                <p>Categoria: <span id="categoria-produto"></span></p>
+                </div>
+        
+
+            <div class="nutricional">
+                <h2>Informações Nutricionais</h2>
+                <p>Valor Energético: <span id="valor-energetico-produto"></span></p>
+                <p>Carboidratos: <span id="carboidratos-produto"></span></p>
+                <p>Proteínas: <span id="proteinas-produto"></span></p>
+                <p>Fibras: <span id="fibras-produto"></span></p>
+            </div>
+
+            <div class="avaliacoes-container">
+                <h2>Avaliações dos Clientes</h2>
+                <ul id="lista-avaliacoes">
+                    </ul>
+                </div>
+
+            <button class="botao-comprar">Comprar</button>
+        </div>
+    </section>
+</main>
+
+    <footer>
+      <h1>Contatos</h1>
+      <h2><a href="#"><img src="imagens/instalogo.png" alt="instagramlogo"></a></h2>
+      <h2><a href="#"><img src="imagens/facebooklogo.png" alt="facebooklogo"></a></h2>
+    </footer>
+
+        <script src="app.js"></script>
 </body>
 </html>
