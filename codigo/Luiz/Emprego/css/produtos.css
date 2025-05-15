@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* HEADER */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@ header {
     background-color: #2a7d30;
 }
 
-/* FOOTER */
+
 footer {
     background-color: #168a06;
     display: grid;
@@ -95,7 +95,7 @@ footer a p {
     color: white;
 }
 
-/* CONTEÚDO PRINCIPAL */
+
 .compras {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -134,13 +134,14 @@ footer a p {
     margin-top: 50px;
     margin-bottom: 50px;
     margin-right: 20px;
+    position: relative;
 }
 
 .descricao p {
     color: white;
     margin-top: 25px;
     margin-left: 30px;
-    font-size: 22px;
+    font-size: 18px;
     word-wrap: break-word;
     white-space: normal;
     max-width: 640px;
@@ -162,6 +163,13 @@ footer a p {
     border-radius: 20px;
     width: 215px;
     text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.jv p{
+    font-size: 18px;
+
 }
 
 
