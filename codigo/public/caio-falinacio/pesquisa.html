@@ -64,29 +64,6 @@
     </footer>
 
     <script src="js/pesquisa.js"></script>
-    <script src="js/pesquisa.js"></script>
-<script>
-  const tela = document.getElementById('produtos');
-  const produtosDisponiveis = dados.filter(p => p.disponivel);
-
-  if (produtosDisponiveis.length > 0) {
-    produtosDisponiveis.forEach(produto => {
-      tela.innerHTML += `
-        <div class="caixa-produto">
-          <p><img src="assets/img/${produto.imagens[0]}" width="150" /></p>
-          <p><strong>Produto:</strong> ${produto.nome} <br>
-          <strong>Descrição:</strong> ${produto.descricao} <br>
-          <strong>Vendedor:</strong> ${produto.produtor.nome} <br>
-          <strong>Preço:</strong> R$${produto.preco}/${produto.unidade} <br>
-          <strong>Localização:</strong> ${produto.produtor.localizacao}</p>
-          <button class="mais-detalhes"> Mais detalhes </button>
-        </div>
-      `;
-    });
-  } else {
-    tela.innerHTML = "<p>Nenhum produto disponível.</p>";
-  }
-</script>
 </body>
 
 </html>
