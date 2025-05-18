@@ -186,9 +186,5 @@ footer a{
 
 /*reduzir tamanho da foto da pagina de detalhes do curso*/
 .detalhe-curso img{
-    max-width: 500px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
+    display: none;
 }
