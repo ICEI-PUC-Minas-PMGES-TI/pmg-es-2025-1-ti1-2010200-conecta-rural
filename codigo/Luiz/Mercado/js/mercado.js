@@ -1,18 +1,20 @@
 
 const produtos = [
     {
-        nome: "Cenoura Orgânica",
-        local: "Feira do Bairro Centro",
-        responsavel: "Joana Almeida",
+        nome: "Tomates Orgânicos",
+        local: "Zona Rural de Nova Esperança - MG",
+        responsavel: "Guilherme Arealdo",
         contato: "(11) 98765-4321",
-        descricao: "Cenouras frescas, cultivadas sem agrotóxicos. Vendidas por quilo."
+        preco: "9,76/KG",
+        descricao: "Tomate orgânico, cultivado com todo o cuidado e carinho, direto da Fazenda Nilton Santos. Ideal a qualquer receita, totalmente livre de agrotóxicos.",
     },
     {
         nome: "Couve Manteiga",
         local: "Mercado Verde Vida",
         responsavel: "Lucas Rocha",
         contato: "(11) 99888-1122",
-        descricao: "Folhas verdes e crocantes, ideais para refogados e sucos detox."
+        preco: "35,00",
+        descricao: "Folhas verdes e crocantes, ideais para refogados e sucos detox.",
     }
 ];
 
@@ -29,6 +31,7 @@ descricaoDiv.innerHTML = `
         <p><strong>Local:</strong> ${produto.local}</p>
         <p><strong>Responsável:</strong> ${produto.responsavel}</p>
         <p><strong>Contato:</strong> ${produto.contato}</p>
+        <p><strong>Preço:</strong> ${produto.preco}</p>
         <p><strong>Descrição:</strong> ${produto.descricao}</p>
         <a href="#"><h3>Comprar</h3></a>
     </div>
