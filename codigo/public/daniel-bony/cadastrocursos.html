@@ -6,7 +6,6 @@
     <title>Cadastrar curso</title>
     <link rel="stylesheet" href="cursoscad.css">
 </head>
-<!--cabeçalho inicio-->
 <header>
     <div class="logo">
         <h1>
@@ -26,46 +25,53 @@
         <a href="#" class="cadastrar">Cadastrar</a>
     </div>
 </header>
-<!--cabeçalho final-->
 <body>
     <main class="cadastro-curso">
         <h1>Cadastrar Novo Curso</h1>
         
         <form class="formulario-curso">
+            <p class="orientacao">Preencha os campos abaixo para cadastrar um novo curso na plataforma Conecta Rural.</p>
+            
             <div class="formulario">
-                <label for="titulo">Titulo do Curso:</label>
-                <input type="text" id="titulo" name="titulo" required>
+                <label for="titulo">Título do Curso:</label>
+                <input type="text" id="titulo" name="titulo" required placeholder="Ex: Marketing Digital para Pequenos Produtores">
+                <small>Nome completo e descritivo do curso.</small> 
             </div>
             
             <div class="formulario">
                 <label for="categoria">Categoria:</label>
                 <select id="categoria" name="categoria" required>
-                    <option value="">Selecione...</option>
-                    <option value="redes-sociais">Redes Sociais</option>
-                    <option value="vendas">Vendas Online</option>
-                    <option value="producao">Produção de Conteúdo</option>
-                    <option value="outros">Outros</option>
+                    <option value="">Selecione a categoria principal...</option>
+                    <option value="redes-sociais">Marketing e Redes Sociais</option>
+                    <option value="vendas">Vendas Online e E-commerce</option>
+                    <option value="producao-conteudo">Produção de Conteúdo e Mídia</option>
+                    <option value="gestao-negocios">Gestão e Finanças</option>
+                    <option value="tecnologia-agricola">Tecnologias Agrícolas</option>
+                    <option value="sustentabilidade">Sustentabilidade e Meio Ambiente</option>
+                    <option value="outros">Outros (especifique abaixo)</option>
                 </select>
             </div>
             
             <div class="formulario">
-                <label for="descricao">Descrição:</label>
-                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                <label for="descricao">Descrição Detalhada:</label>
+                <textarea id="descricao" name="descricao" rows="6" required placeholder="Explique o que o aluno aprenderá, para quem é o curso e o que ele oferece."></textarea>
+                <small>Descreva o conteúdo do curso, objetivos e para quem ele é indicado.</small>
             </div>
             
             <div class="formulario">
-                <label for="duracao">Duração (horas):</label>
-                <input type="number" id="duracao" name="duracao" min="1" required>
+                <label for="duracao">Duração total (horas):</label>
+                <input type="number" id="duracao" name="duracao" min="1" required placeholder="Ex: 10">
             </div>
             
             <div class="formulario">
-                <label for="imagem">Imagem do Curso:</label>
+                <label for="imagem">Imagem de Capa do Curso:</label>
                 <input type="file" id="imagem" name="imagem" accept="image/*">
+                <small>Uma imagem atraente para o curso (JPG, PNG).</small>
             </div>
             
             <div class="formulario">
-                <label for="instrutor">Instrutor:</label>
-                <input type="text" id="instrutor" name="instrutor" required>
+                <label for="instrutor">Nome do Instrutor(a):</label>
+                <input type="text" id="instrutor" name="instrutor" required placeholder="Ex: Ana Souza">
             </div>
             
             <div class="formulario">
@@ -78,13 +84,13 @@
             </div>
             
             <div class="formulario">
-                <label for="modulos">Módulos (separados por vírgula):</label>
-                <textarea id="modulos" name="modulos" rows="3" placeholder="Ex: Introdução, Configuração, Publicação"></textarea>
+                <label for="modulos">Tópicos/Módulos do Curso (separados por vírgula):</label>
+                <textarea id="modulos" name="modulos" rows="3" placeholder="Ex: Módulo 1: Introdução à Pecuária; Módulo 2: Nutrição Animal"></textarea>
+                
             </div>
             
             <div class="enviarcurso">
                 <button type="submit" class="enviar">Cadastrar Curso</button>
-                
             </div>
         </form>
     </main>
