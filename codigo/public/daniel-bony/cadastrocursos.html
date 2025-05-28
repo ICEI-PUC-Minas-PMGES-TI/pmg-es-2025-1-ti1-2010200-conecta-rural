@@ -109,7 +109,9 @@
                 <small>Liste os principais temas abordados no curso.</small>
             </div>
 
-            <hr> <div class="formulario">
+            <hr> 
+
+            <div class="formulario">
                 <label>Este curso será:</label>
                 <div class="tipo-curso">
                     <label><input type="radio" name="tipoPreco" value="gratuito" id="cursoGratuito" required> Gratuito</label>
@@ -121,6 +123,23 @@
                 <label for="preco">Valor do Curso (R$):</label>
                 <input type="number" id="preco" name="preco" min="0" step="0.01" placeholder="Ex: 99.90">
                 <small>Defina o valor em Reais (R$).</small>
+            </div>
+
+            <div class="formulario" id="campoMetodosPagamento" style="display: none;">
+                <label>Métodos de Pagamento Aceitos:</label>
+                <div class="metodos-pagamento-opcoes">
+                    <label><input type="checkbox" name="metodoPagamento" value="pix"> PIX</label>
+                    <label><input type="checkbox" name="metodoPagamento" value="boleto"> Boleto Bancário</label>
+                    <label><input type="checkbox" name="metodoPagamento" value="cartaoCredito"> Cartão de Crédito</label>
+                    <label><input type="checkbox" name="metodoPagamento" value="transferencia"> Transferência Bancária</label>
+                    <label><input type="checkbox" name="metodoPagamento" value="presencial"> Pagamento Presencial</label>
+                    <label><input type="checkbox" name="metodoPagamento" value="outrosMetodos"> Outro(s) (especifique)</label>
+                </div>
+            </div>
+
+            <div class="formulario" id="campoOutrosMetodos" style="display: none;">
+                <label for="outrosMetodosTexto">Especifique outros métodos de pagamento:</label>
+                <textarea id="outrosMetodosTexto" name="outrosMetodosTexto" rows="2" placeholder="Ex: PicPay, Mercado Pago"></textarea>
             </div>
             
             <div class="enviarcurso">
