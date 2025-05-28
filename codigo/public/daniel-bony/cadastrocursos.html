@@ -35,7 +35,7 @@
             <div class="formulario">
                 <label for="titulo">Título do Curso:</label>
                 <input type="text" id="titulo" name="titulo" required placeholder="Ex: Marketing Digital para Pequenos Produtores">
-                <small>Nome completo e descritivo do curso.</small> 
+                <small>Nome completo e descritivo do curso.</small>
             </div>
             
             <div class="formulario">
@@ -50,6 +50,11 @@
                     <option value="sustentabilidade">Sustentabilidade e Meio Ambiente</option>
                     <option value="outros">Outros (especifique abaixo)</option>
                 </select>
+            </div>
+
+            <div class="formulario" id="outraCategoria" style="display: none;">
+                <label for="outrosTexto">Qual categoria?</label>
+                <input type="text" id="outrosTexto" name="outrosTexto" placeholder="Ex: Apicultura Moderna">
             </div>
             
             <div class="formulario">
@@ -86,7 +91,7 @@
             <div class="formulario">
                 <label for="modulos">Tópicos/Módulos do Curso (separados por vírgula):</label>
                 <textarea id="modulos" name="modulos" rows="3" placeholder="Ex: Módulo 1: Introdução à Pecuária; Módulo 2: Nutrição Animal"></textarea>
-                
+                <small>Liste os principais temas abordados no curso.</small>
             </div>
             
             <div class="enviarcurso">
@@ -100,5 +105,8 @@
         <h2><a href="#"><img src="imagens/instalogo.png" alt="instagramlogo"></a></h2>
         <h2><a href="#"><img src="imagens/facebooklogo.png" alt="facebooklogo"></a></h2>
     </footer>
+
+    
 </body>
+<script src="cadastrocursos.js"></script>
 </html>
