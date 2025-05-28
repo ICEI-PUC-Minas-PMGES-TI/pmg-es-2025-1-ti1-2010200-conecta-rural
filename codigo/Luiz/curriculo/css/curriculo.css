@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: rgb(214, 255, 190);
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #168a06;
+    color: white;
+    padding: 10px 50px;
+    max-height: 90px;
+}
+
+.logo img {
+    width: 100px;
+    margin-top: 8px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+.botoes-login {
+    display: flex;
+    gap: 10px;
+}
+
+.botoes-login a {
+    text-decoration: none;
+}
+
+.entrar, .cadastrar {
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: #0a5500;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.entrar:hover, .cadastrar:hover {
+    background-color: #2a7d30;
+}
+
+
+.formulario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.form-box {
+    background-color: #0a5500;
+    padding: 30px 40px;
+    border-radius: 20px;
+    color: white;
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-box button:hover {
+    background-color: rgb(184, 252, 178);
+}
+
+
+footer {
+    background-color: #168a06;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 60px;
+}
+
+footer h3 {
+    margin: 10px;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a p {
+    margin-left: 15px;
+    color: white;
+}
