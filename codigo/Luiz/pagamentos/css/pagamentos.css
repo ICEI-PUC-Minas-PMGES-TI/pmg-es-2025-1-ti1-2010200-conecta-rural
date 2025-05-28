@@ -109,8 +109,8 @@ header {
 .pagamento-box button {
     width: 100%;
     padding: 12px;
-    background-color: #ffcc00;
-    color: #0a5500;
+    background-color: #ffffff;
+    color: #000000;
     font-weight: bold;
     border: none;
     border-radius: 20px;
@@ -120,7 +120,7 @@ header {
 }
 
 .pagamento-box button:hover {
-    background-color: #e6b800;
+    background-color: #c1ffb5;
 }
 
 /* Footer igual ao original */
