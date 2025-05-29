@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Nova Vaga - Conecta Rural</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Conecta Rural">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Mercado</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Empregos</a></li>
+            </ul>
+        </nav>
+        <div class="buttons">
+            <button class="btn">Entrar</button>
+            <button class="btn">Cadastrar</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Cadastrar Nova Vaga</h1>
+        <p>Preencha os campos abaixo para cadastrar uma nova vaga de emprego na plataforma Conecta Rural.</p>
+
+        <form>
+            <label for="titulo">Título da Vaga:</label>
+            <input type="text" id="titulo" placeholder="Ex: Técnico Agrícola, Operador de Máquinas" required>
+
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" required>
+                <option value="">Selecione a categoria principal...</option>
+                <option value="agricultura">Agricultura</option>
+                <option value="pecuaria">Pecuária</option>
+                <option value="logistica">Logística</option>
+                <option value="tecnologia">Tecnologia</option>
+            </select>
+
+            <label for="descricao">Descrição da Vaga:</label>
+            <textarea id="descricao" rows="4" placeholder="Explique as atividades, requisitos e benefícios da vaga." required></textarea>
+
+            <label for="local">Local de Trabalho:</label>
+            <input type="text" id="local" placeholder="Ex: Fazenda ABC, Cidade - Estado" required>
+
+            <label for="salario">Faixa Salarial:</label>
+            <input type="text" id="salario" placeholder="Ex: R$ 2.000,00 a R$ 3.000,00">
+
+            <label for="contato">E-mail ou Telefone para Contato:</label>
+            <input type="text" id="contato" placeholder="Ex: contato@empresa.com ou (00) 00000-0000" required>
+
+            <button type="submit" class="btn-submit">Cadastrar Vaga</button>
+        </form>
+    </main>
+
+</body>
+</html>
