@@ -33,32 +33,49 @@
 </header>
 <!--cabeçalho final-->
 <body>
+    <div class="filtros">
+        <select id="filtroCategoria">
+          <option value="todos">Todos</option>
+          <option value="Redes sociais">Redes sociais</option>
+          <option value="Marketing">Marketing</option>
+        </select>
+    
+        <select id="filtroOrdenar">
+          <option value="padrao">Ordenar por</option>
+          <option value="maisRecentes">Mais recentes</option>
+          <option value="maisVistos">Mais vistos</option>
+        </select>
+    
+        <button onclick="aplicarFiltros()">Filtrar</button>
+        <button onclick="limparFiltros()" class="limpar-filtros">Limpar Filtros</button>
+      </div>
+      
     <!--os cursos agora vao ser mostrados pelo app.js-->
     <main class="cursos">
-
         <section class="coluna">
-            <h1>Recomendados</h1>
-            <div class="caixas" id="recomendados"></div>
+          <h1>Recomendados</h1>
+          <div class="caixas" id="recomendados"></div>
         </section>
-        
+      
         <section class="coluna">
-            <h1>Mais vistos</h1>
-            <div class="caixas" id="maisvistos"></div>
+          <h1>Mais vistos</h1>
+          <div class="caixas" id="maisvistos"></div>
         </section>
-        
-        <section class="coluna">
-            <div class="barrapesquisa">
-                <input type="text" placeholder="Buscar...">
-                <button class="ok">OK</button>
-
-            </div>
-            <a href="cadastrocursos.html" class="cadastrar-curso">Cadastrar cursos</a>
-            <h1>Redes sociais</h1>
-            <div class="caixas" id="redessociais"></div>
+      
+        <section class="coluna" id="colunaPesquisaCadastro">
+          <div class="barrapesquisa">
+            <input type="text" placeholder="Buscar...">
+            <button class="ok">OK</button>
+          </div>
+          <a href="cadastrocursos.html" class="cadastrar-curso">Cadastrar cursos</a>
+          <h1>Redes sociais</h1>
+          <div class="caixas" id="redessociais"></div>
         </section>
-        
+      </main>
+      
 
-    </main>
+<div id="secaoFiltrada" class="cursos" style="display: none;"></div>
+
 
     <footer>
         <h1>Contatos</h1>
@@ -67,6 +84,7 @@
         
 
     </footer>
+    
     <script src="app.js"></script>
 </body>
 </html>

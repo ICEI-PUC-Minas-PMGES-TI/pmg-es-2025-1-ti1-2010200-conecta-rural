@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectaRural</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo conectarural branco.png" alt="ConectaRural" width="120">
+        </div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Mercado</a>
+            <a href="#">Cursos</a>
+            <a href="#">Empregos</a>
+        </nav>
+        <div class="botoes-login">
+            <a href="#login" class="entrar">Entrar</a>
+            <a href="#cadastro" class="cadastrar">Cadastrar</a>
+        </div>
+    </header>
+
+    <!-- Modal Login -->
+    <div id="login" class="modal">
+        <div class="form-box">
+            <form>
+                
+                <input type="email" placeholder="E-mail" required>
+                <input type="password" placeholder="Senha" required>
+                <div class="logo-centro">
+                    <img src="../img/logo conectarural branco.png" alt="Logo" width="80">
+                </div>
+                <button type="submit" class="botao">Entrar</button>
+                <a href="#" class="fechar">Fechar</a>
+            </form>
+        </div>
+    </div>
+
+ 
+    <!-- Cadastro -->
+
+<div id="cadastro" class="modal">
+    <div class="form-box">
+        <form id="cadastroForm">
+            
+            <div class="step" id="step1">
+                <h3>Informações Pessoais</h3>
+                <input type="text" placeholder="Nome" required>
+                <input type="text" placeholder="Sobrenome" required>
+                <input type="text" placeholder="Data de nascimento (DD/MM/AAAA)" required>
+                <input type="text" placeholder="CPF" required>
+                
+                <div class="logo-centro">
+                    <img src="../img/logo conectarural branco.png" alt="Logo ConectaRural">
+                </div>
+                
+                <div class="button-group">
+                    <button type="button" onclick="nextStep(1)">Próximo</button>
+                </div>
+            </div>
+
+            
+            <div class="step" id="step2" style="display:none;">
+                <h3>Endereço</h3>
+                <input type="text" placeholder="CEP" required>
+                <input type="text" placeholder="Rua" required>
+                <input type="text" placeholder="Bairro" required>
+                <input type="text" placeholder="Número" required>
+                <input type="text" placeholder="Complemento">
+                
+                <div class="logo-centro">
+                    <img src="../img/logo conectarural branco.png" alt="Logo ConectaRural">
+                </div>
+                
+                <div class="button-group">
+                    <button type="button" onclick="prevStep(2)">Voltar</button>
+                    <button type="button" onclick="nextStep(2)">Próximo</button>
+                </div>
+            </div>
+
+            <!-- Passo 3: Email e Senha -->
+            <div class="step" id="step3" style="display:none;">
+                <h3>Email e Senha</h3>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required>
+                <input type="password" placeholder="Confirmar Senha" required>
+                
+                <div class="logo-centro">
+                    <img src="../img/logo conectarural branco.png" alt="Logo ConectaRural">
+                </div>
+                
+                <div class="button-group">
+                    <button type="button" onclick="prevStep(3)">Voltar</button>
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </div>
+
+            <a href="#" class="fechar">Fechar</a>
+        </form>
+    </div>
+</div>
+
+    <footer>
+    <div class="footer-content">
+        <div>
+            <strong>Redes Sociais</strong><br>
+            📷 Conecta_Rural<br>
+            📘 Conecta_Rural
+        </div>
+        <div>Sobre nós</div>
+        <div>Mais informações</div>
+    </div>
+</footer>
+
+    <script src="../js/cadastro.js"></script>
+</body>
+</html>
