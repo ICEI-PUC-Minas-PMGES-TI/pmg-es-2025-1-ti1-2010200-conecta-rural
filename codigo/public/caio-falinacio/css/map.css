@@ -47,18 +47,12 @@ color: yellow;
 }
 
 
-
 #map{
-    width: 80%;
+    width: 70%;
     height: 500px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
-.map-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 
 
 .footer{
