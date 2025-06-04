@@ -1,4 +1,14 @@
-// Função para aplicar máscara no telefone
+// 🅰️ Permitir somente letras nos campos nome e local
+function permitirSomenteLetras(input) {
+    input.addEventListener('input', function () {
+        this.value = this.value.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, '');
+    });
+}
+
+permitirSomenteLetras(document.getElementById('nome'));
+permitirSomenteLetras(document.getElementById('local'));
+
+// ☎️ Função para aplicar máscara no telefone
 const telefoneInput = document.getElementById('telefone');
 telefoneInput.addEventListener('input', function(e) {
     let value = e.target.value.replace(/\D/g, '');
@@ -13,7 +23,7 @@ telefoneInput.addEventListener('input', function(e) {
     e.target.value = value;
 });
 
-// Função para aplicar máscara no campo valor
+// 💰 Função para aplicar máscara no campo valor
 const valorInput = document.getElementById('valor');
 valorInput.addEventListener('input', function(e) {
     let value = e.target.value.replace(/\D/g, '');
@@ -22,20 +32,28 @@ valorInput.addEventListener('input', function(e) {
     value = value.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
     e.target.value = 'R$ ' + value;
 });
+
+// 📝 Função para capturar os dados do formulário e salvar no localStorage
 const form = document.querySelector('form');
 
 form.addEventListener('submit', function(event) {
     event.preventDefault(); // Evita que o formulário recarregue a página
 
     const oferta = {
-        nome: document.getElementById('nome').value,
-        telefone: document.getElementById('telefone').value,
-        area: document.getElementById('area').value,
-        descricao: document.getElementById('descricao').value,
-        local: document.getElementById('local').value,
-        valor: document.getElementById('valor').value,
-        observacoes: document.getElementById('observacoes').value
+        nome: document.getElementById('nome').value.trim(),
+        telefone: document.getElementById('telefone').value.trim(),
+        area: document.getElementById('area').value.trim(),
+        descricao: document.getElementById('descricao').value.trim(),
+        local: document.getElementById('local').value.trim(),
+        valor: document.getElementById('valor').value.trim(),
+        observacoes: document.getElementById('observacoes').value.trim()
     };
+
+    // Validação simples se algum campo obrigatório está vazio
+    if (!oferta.nome || !oferta.telefone || !oferta.area || !oferta.descricao || !oferta.local || !oferta.valor) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return;
+    }
 
     // Recupera ofertas existentes do localStorage
     let ofertas = JSON.parse(localStorage.getItem('ofertasEmprego')) || [];
