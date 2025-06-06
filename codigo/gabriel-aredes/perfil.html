@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="perfil.css"> 
+    <link rel="stylesheet" href="perfil.css">
     <title>Conecta Rural - Meu Perfil</title>
-    </head>
+</head>
+
 <body>
     <header>
         <div class="logo">
@@ -20,8 +22,8 @@
             </ul>
         </nav>
         <div class="botoes-login">
-            <span class="nome-usuario-header">Olá, João!</span> 
-            <button class="cadastrar">Sair</button> 
+            <span class="nome-usuario-header">Olá, João!</span>
+            <button class="cadastrar">Sair</button>
         </div>
     </header>
 
@@ -30,33 +32,23 @@
 
             <section class="perfil-card">
                 <div class="perfil-imagem">
-                    <img src="imagens/joaooliveira.png" class="foto-usuario">
-                    <a href="#" class="alterar-foto-link">Alterar Foto</a>
+                    <img src="imagens/joaooliveira.png" class="foto-usuario" id="foto-perfil"> <a href="#"
+                        class="alterar-foto-link">Alterar Foto</a>
                 </div>
+
                 <div class="perfil-info">
-                    <h1>João da Silva</h1>
-                    <p class="email-usuario">joao.silva@email.com</p>
-                    <p class="local-usuario">
-                        Sítio Boa Esperança, Nova Esperança - MG
-                    </p>
-                    <p class="membro-desde">
-                        Membro desde: 15/03/2024
-                    </p>
-                    <button class="botao-editar-perfil">Editar Perfil</button>
+                    <h1 id="nome-usuario">Carregando...</h1>
+                    <p class="email-usuario" id="email-usuario"></p>
+                    <p class="local-usuario" id="local-usuario"></p>
+                    <p class="membro-desde" id="membro-desde"></p> <button class="botao-editar-perfil">Editar
+                        Perfil</button>
                 </div>
+
                 <div class="perfil-resumo">
                     <h2>Resumo Rápido</h2>
                     <div class="resumo-item">
                         <span>3</span>
                         <p>Cursos Inscritos</p>
-                    </div>
-                    <div class="resumo-item">
-                        <span>1</span>
-                        <p>Curso Concluído</p>
-                    </div>
-                    <div class="resumo-item">
-                        <span>5</span>
-                        <p>Compras no Mercado</p>
                     </div>
                 </div>
             </section>
@@ -66,8 +58,8 @@
                 <div class="cursos-grid">
                     <div class="curso-item">
                         <div class="curso-imagem">
-                           <img src="imagens/insta.png" alt="Curso de Agropecuária Sustentável">
-                           <span class="tag-categoria">Tecnologia</span>
+                            <img src="imagens/insta.png" alt="Curso de Agropecuária Sustentável">
+                            <span class="tag-categoria">Tecnologia</span>
                         </div>
                         <div class="curso-info">
                             <h3>Como utilizar o Instagram</h3>
@@ -83,14 +75,14 @@
                     </div>
 
                     <div class="curso-item">
-                         <div class="curso-imagem">
+                        <div class="curso-imagem">
                             <img src="imagens/youtube.png" alt="Curso de Irrigação Eficiente">
                             <span class="tag-categoria">Tecnologia</span>
                         </div>
-                         <div class="curso-info">
+                        <div class="curso-info">
                             <h3>Como gravar videos para o Youtube</h3>
                             <p class="instrutor">Por: Carlos Pereira</p>
-                             <div class="progresso">
+                            <div class="progresso">
                                 <p>Progresso: 45%</p>
                                 <div class="barra-progresso">
                                     <div class="progresso-atual" style="width: 45%;"></div>
@@ -101,14 +93,14 @@
                     </div>
 
                     <div class="curso-item curso-concluido">
-                         <div class="curso-imagem">
+                        <div class="curso-imagem">
                             <img src="imagens/insta1.png" alt="Curso de Gestão Rural">
                             <span class="tag-categoria">Tecnologia</span>
                         </div>
-                         <div class="curso-info">
+                        <div class="curso-info">
                             <h3>Como criar conta no Instagram</h3>
                             <p class="instrutor">Por: Ana Souza</p>
-                             <div class="progresso">
+                            <div class="progresso">
                                 <p>Concluído!</p>
                                 <div class="barra-progresso">
                                     <div class="progresso-atual" style="width: 100%;"></div>
@@ -117,14 +109,15 @@
                             <a href="#" class="botao-acessar botao-certificado">Ver Certificado</a>
                         </div>
                     </div>
-                    
-                    </div>
-                 <div class="ver-todos">
+
+                </div>
+                <div class="ver-todos">
                     <a href="cursos.html" class="botao-ver-todos">Explorar Mais Cursos</a>
                 </div>
             </section>
 
-            </div> </main>
+        </div>
+    </main>
 
     <footer>
         <h1>Contatos</h1>
@@ -132,5 +125,6 @@
         <h2><a href="#"><img src="imagens/facebooklogo.png" alt="Facebook Logo"></a></h2>
     </footer>
 
-    </body>
+</body>
+
 </html>
