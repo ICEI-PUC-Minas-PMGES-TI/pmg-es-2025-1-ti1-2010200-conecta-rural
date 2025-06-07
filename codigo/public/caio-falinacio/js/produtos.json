@@ -14,7 +14,7 @@
       "vitaminaC": "13.7mg"
     },
     "categoria": "Legumes e Verduras",
-    "imagens": ["tomate1.jpg", "tomate2.jpg"],
+    "imagens": ["tomate1.png", "tomate2.png"],
     "produtor": {
       "nome": "Guilherme Arealdo",
       "propriedade": "Fazenda Nilton Santos",
@@ -48,7 +48,7 @@
       "vitaminaD": "37 IU"
     },
     "categoria": "Laticínios e Ovos",
-    "imagens": ["ovos1.jpg", "ovos2.jpg"],
+    "imagens": ["ovos1.png", "ovos2.png"],
     "produtor": {
       "nome": "Carmen Rosa Aveiro",
       "propriedade": "Fazenda Aras do Norte",
@@ -85,7 +85,7 @@
       "vitaminaB12": "2.0µg"
     },
     "categoria": "Açougue",
-    "imagens": ["file1.jpg", "file2.jpg"],
+    "imagens": ["file1.png", "file2.png"],
     "produtor": {
       "nome": "Jaerci Carvalho",
       "propriedade": "Fazenda Predo Areades",
@@ -120,7 +120,7 @@
       "vitaminaB12": "0.3µg"
     },
     "categoria": "Açougue",
-    "imagens": ["peito1.jpg", "peito2.jpg"],
+    "imagens": ["peito1.png", "peito2.png"],
     "produtor": {
       "nome": "Ricardo Freire de Jesus",
       "propriedade": "Fazenda Nilton Santos",
@@ -155,7 +155,7 @@
       "vitaminaB3": "1.5mg"
     },
     "categoria": "Cereais",
-    "imagens": ["sacoarroz1.jpg", "sacoarroz2.jpg"],
+    "imagens": ["sacoarroz1.png", "sacoarroz2.png"],
     "produtor": {
       "nome": "Olinto de Braga",
       "propriedade": "Fazenda Nilton Santos",
@@ -191,7 +191,7 @@
       "folato": "38µg"
     },
     "categoria": "Legumes e Verduras",
-    "imagens": ["alfaceverde1.jpg", "alfaceverde2.jpg"],
+    "imagens": ["alface1.png", "alface2.png"],
     "produtor": {
       "nome": "Lourdes Gomes Bragança",
       "propriedade": "Fazenda Nilton Santos",

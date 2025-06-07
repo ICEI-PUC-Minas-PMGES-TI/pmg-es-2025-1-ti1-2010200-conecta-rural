@@ -11,6 +11,32 @@ function iniciarMapa (){
             option.textContent = nome;
             filtroSelect.appendChild(option);
         });
+
+        let centroMapa = {lat:-18.5, lng: -44};
+
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(
+                (posicao) => {
+                    centroMapa = {
+                        lat: posicao.coords.latitude,
+                        lng: posicao.coords.longitude
+                    };
+                    mapa.setCenter(centroMapa);
+
+                    new google.maps.Marker({
+                        map: mapa,
+                        position: centroMapa,
+                        title: "Você está aqui!",
+                        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+                    })
+                },
+                (erro) => {
+                    console.warn("Erro ao obter geolocalização", erro.message)
+                }
+            );
+        }else{
+            console.warn("Geolocalização não é suportada neste navegador.");
+        }
     
         const marcadores = [];
         const mapa = new google.maps.Map(document.querySelector('#map'), {
