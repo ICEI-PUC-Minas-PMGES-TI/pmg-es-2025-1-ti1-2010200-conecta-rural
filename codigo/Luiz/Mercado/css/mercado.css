@@ -6,8 +6,8 @@
 
 body {
     background-color: rgb(214, 255, 190);
-    height: 100%;
     font-family: Arial, sans-serif;
+    height: 100vh;
 }
 
 header {

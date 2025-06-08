@@ -1,37 +1,44 @@
-html, body{
+/* Seu CSS Existente (cabeçalho, rodapé e globais) - Mantidos como no seu style.css para consistência */
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     background-color: rgb(214, 255, 190);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-main{
-    flex: 1;
+main {
+    flex: 1; 
 }
-/**cabeçalho, rodapé**/
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    background-color: #168a06;
+    color: white;
+    text-align: center;
+    max-height: 90px;
+    padding: 0 10px;
 }
 
-.logo img{
+.logo img {
     width: 100px;
     margin-top: 8px;
     justify-self: start;
 }
-.menu{
+
+.menu {
     display: flex;
     gap: 25px;
     justify-items: center;
@@ -39,47 +46,18 @@ header{
     left: 38%;
 }
 
-.menu a{
+.menu a {
     color: white;
     font-weight: bold;
 }
 
-header, footer {
-    background-color: #168a06;
-    color: white;
-    text-align: center;
-    max-height: 90px;
-}
-footer{
-    display: inline-block;
-    padding-bottom: 10px;
-}
-footer img{
-    width: 18px;
-}
-footer h1{  
-    display: flex;
-    justify-content: center;
-    font-size: large;
-    text-decoration: underline;
-}
-footer h2{
-    display: flex;
-    font-size: small;
-    justify-content: center;
-}
-
-footer a{
-    color: white;
-}
-
-.botoes-login{
+.botoes-login {
     display: flex;
     gap: 10px;
     margin-left: auto;
 }
 
-.entrar, .cadastrar{
+.entrar, .cadastrar {
     padding: 8px 16px;
     border-radius: 15px;
     font-weight: bold;
@@ -88,103 +66,155 @@ footer a{
     margin-right: 10px;
 }
 
-
-/** fim cabeçalho,rodapé **/
-
-.cursos {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    gap: 40px; 
-    flex-wrap: wrap;
-}
-
-.coluna {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-}
-
-.coluna h1 {
-    background-color: #7aff75;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 20px;
-    border: 2px solid #0a5500;
-}
-
-.caixas {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.itemcurso {
-    background: #168a06;
-    border-radius: 8px;
-    padding: 15px;
-}
-
-.itemcurso img{
-    width: 100px;
-    padding-top: 10px;
-    display: flex;
-    justify-self: center;
-}
-
-.itemcurso h2 {
-    margin: 0;
+footer {
+    background-color: #168a06;
     color: white;
-    font-size: medium;
     text-align: center;
+    max-height: 90px;
+    display: inline-block;
+    padding-bottom: 10px;
+    width: 100%;
 }
-
-.sabermais{
-    display: block;
-    text-align: center;
-    color:white;
-    background-color: rgb(27, 117, 0);
+footer img {
+    width: 18px;
+}
+footer h1 {  
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    text-decoration: underline;
+}
+footer h2 {
+    display: flex;
     font-size: small;
-    border-radius: 5px;
-    margin-top: 20px;
+    justify-content: center;
+}
+footer a {
+    color: white;
 }
 
-.barrapesquisa {
+
+.detalhes-curso-container {
+    max-width: 800px;
+    margin: 30px auto; 
+    padding: 20px;
+    background: rgb(184, 255, 136);
+   
+}
+.detalhes-curso-container .titulo-curso {
+    font-size: 2em;
+    color: #168a06;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+   
+}
+.curso-header-detalhes {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding-left: 10px;
+    margin-bottom: 20px;
 }
 
-.barrapesquisa input {
-    padding: 8px 12px;
-    border: 1px solid rgb(27, 117, 0);
-    border-radius: 15px 0 0 15px;
-    width: 150px;
+.curso-header-detalhes .imagem-curso {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px; 
 }
 
-.ok {
-    padding: 8px 15px;
+.curso-header-detalhes .descricao-curso {
+    font-size: 1em;
+    text-align: left; 
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.curso-info-detalhes {
+    background-color: rgb(240, 255, 230);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.curso-info-detalhes p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.curso-info-detalhes strong {
+    color: #168a06;
+}
+
+#cursoMetodosPagamento, #cursoOutrosMetodos {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.curso-modulos {
+    margin-bottom: 20px; 
+}
+
+.curso-modulos h2 {
+    font-size: 1.5em;
+    color: #168a06;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.curso-modulos ul {
+    list-style: circle;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.curso-modulos ul li {
+    border: none;
+    padding: 5px 0; 
+    margin-bottom: 5px;
+    font-size: 0.95em;
+}
+
+.video-container-detalhes {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px; 
+   
+}
+
+.video-container-detalhes h2 {
+    font-size: 1.5em;
+    color: #168a06;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.video-container-detalhes iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.voltar-cursos-btn {
+    display: block;
+    width: fit-content; 
+    margin: 15px auto 0 auto;
+    padding: 10px 20px;
     background-color: #0a5500;
-    color: white;
-    border-radius: 0 15px 15px 0;
-    cursor: pointer;
-}
-
-.cadastrar-curso {
-    background-color: #0a5500 ;
-    color: white;
-    padding-top: 10px;
-    padding: 8px 15px;
-    border-radius: 17px;
-    font-weight: bold;
+    color: #fff;
     text-decoration: none;
-    border: 2px solid #0a5500;
-    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s ease;
+   
 }
 
-/*reduzir tamanho da foto da pagina de detalhes do curso*/
-.detalhe-curso img{
-    display: none;
+.voltar-cursos-btn:hover {
+    background-color: rgb(27, 117, 0);
 }

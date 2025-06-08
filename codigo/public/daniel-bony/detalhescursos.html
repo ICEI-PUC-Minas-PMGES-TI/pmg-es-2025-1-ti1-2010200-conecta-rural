@@ -1,54 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conecta Rural</title>
-    <link rel="stylesheet" href="detalhescur.css">
+    <title>Detalhes do Curso - Conecta Rural</title>
+    <link rel="stylesheet" href="detalhescur.css"> 
 </head>
-<!--cabeçalho inicio-->
 <header>
-
     <div class="logo">
-    <h1>
-        <a href="home.html"><img src="imagens/logocrbranco.png" alt="logocr">
-    </a>
-    
-</h1>
-
+        <h1>
+            <a href="home.html"><img src="imagens/logocrbranco.png" alt="logocr"></a>
+        </h1>
     </div>
 
-     <nav class="menu">
+    <nav class="menu">
         <a href="home.html">Home</a>
         <a href="mercado.html">Mercado</a>
         <a href="cursos.html">Cursos</a>
         <a href="Empregos">Empregos</a>
+    </nav>
 
-     </nav>
-
-     <div class="botoes-login">
+    <div class="botoes-login">
         <a href="#" class="entrar">Entrar</a>
         <a href="#" class="cadastrar">Cadastrar</a>
     </div>
-
 </header>
-<!--cabeçalho final-->
 <body>
-    
-    <main class="cursos">
-        <div id="videoContainer">
-            <iframe id="videoCurso" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    <main class="detalhes-curso-container">
+        <h1 id="cursoTitulo" class="titulo-curso"></h1>
+        
+        <div class="curso-header-detalhes">
+            <img id="cursoImagem" src="" alt="Imagem do Curso" class="imagem-curso">
+            <p id="cursoDescricao" class="descricao-curso"></p>
         </div>
-</main>
+        
+        <div class="curso-info-detalhes">
+            <p><strong>Instrutor:</strong> <span id="cursoInstrutor"></span></p>
+            <p><strong>Categoria:</strong> <span id="cursoCategoria"></span></p>
+            <p><strong>Duração:</strong> <span id="cursoDuracao"></span> horas</p>
+            <p><strong>Nível:</strong> <span id="cursoDificuldade"></span></p>
+            <p><strong>Público-alvo:</strong> <span id="cursoPublicoAlvo"></span></p>
+            <p><strong>Formato:</strong> <span id="cursoFormato"></span></p>
+            <p><strong>Publicado em:</strong> <span id="cursoData"></span></p>
+            <p id="cursoPreco"><strong>Preço:</strong> </p>
+            <div id="cursoMetodosPagamento">
+                <strong>Métodos de Pagamento:</strong> <span id="metodosPagamentoLista"></span>
+            </div>
+            <div id="cursoOutrosMetodos" style="display: none;">
+                <strong>Outros Métodos:</strong> <span id="outrosMetodosTexto"></span>
+            </div>
+        </div>
+
+        <section class="curso-modulos">
+            <h2>Módulos do Curso:</h2>
+            <ul id="modulosLista">
+                </ul>
+        </section>
+
+        <div id="videoContainer" class="video-container-detalhes">
+            <h2>Vídeo de Apresentação:</h2>
+            <iframe id="videoCurso" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <a href="cursos.html" class="voltar-cursos-btn">Voltar para Cursos</a>
+    </main>
 
     <footer>
         <h1>Contatos</h1>
         <h2><a href="#"><img src="imagens/instalogo.png" alt="instagramlogo"></a></h2>
         <h2><a href="#"><img src="imagens/facebooklogo.png" alt="facebooklogo"></a></h2>
-        
-
     </footer>
     <script src="detalhescursos.js"></script>
-
 </body>
 </html>

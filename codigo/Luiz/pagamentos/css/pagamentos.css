@@ -116,11 +116,14 @@ header {
     border-radius: 20px;
     margin-top: 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .pagamento-box button:hover {
-    background-color: #c1ffb5;
+    background-color: #e6e6e6;
+    box-shadow: 0 5px 15px #0000005e;
+    transform: translateY(-2px);
+
 }
 
 /* Footer igual ao original */
