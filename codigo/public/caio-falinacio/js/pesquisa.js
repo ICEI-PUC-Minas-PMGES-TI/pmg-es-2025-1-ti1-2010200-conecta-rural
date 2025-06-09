@@ -44,7 +44,7 @@ function exibirProdutos(produtos){
     produtos.forEach(produto => {
       tela.innerHTML += `
         <div class="caixa-produto">
-          <p><img src="assets/img/${produto.imagens[0]}" width="150" /></p>
+          <p><img src="../assets/images/${produto.imagens[0]}" width="150" height="150px" /></p>
           <p><strong>Produto:</strong> ${produto.nome} <br>
           <strong>Descrição:</strong> ${produto.descricao} <br>
           <strong>Vendedor:</strong> ${produto.produtor.nome} <br>

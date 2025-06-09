@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Escolher Forma de Pagamento</title>
-  <link rel="stylesheet" href="../css/pagamentos.css" />
+  <link rel="stylesheet" href="../css/formasdepag.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -33,10 +34,10 @@
     <div class="pagamento-box">
       <h2>Escolha a Forma de Pagamento</h2>
       <div class="opcoes-pagamento">
-        <button onclick="selecionarPagamento('pix')">Pix</button>
-        <button onclick="selecionarPagamento('debito')">Débito</button>
-        <button onclick="selecionarPagamento('credito')">Crédito</button>
-        <button onclick="selecionarPagamento('boleto')">Boleto</button>
+        <button onclick="selecionarPagamento('pix')"><i class="fas fa-qrcode"></i> Pix</button>
+<button onclick="selecionarPagamento('debito')"><i class="fas fa-credit-card"></i> Débito</button>
+<button onclick="selecionarPagamento('credito')"><i class="far fa-credit-card"></i> Crédito</button>
+<button onclick="selecionarPagamento('boleto')"><i class="fas fa-barcode"></i> Boleto</button>
       </div>
     </div>
   </main>
@@ -51,9 +52,10 @@
   </footer>
 
   <script>
-    function selecionarPagamento(tipo) {
-      window.location.href = tipo + ".html";
-    }
+  function selecionarPagamento(tipo) {
+    localStorage.setItem("formaPagamento", tipo);
+    window.location.href = tipo + ".html";
+  }
   </script>
   
 </body>

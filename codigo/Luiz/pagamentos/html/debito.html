@@ -56,11 +56,28 @@
   </footer>
 
   <script>
-    const input = document.getElementById('apenasTexto');
-    input.addEventListener('input', function () {
-      this.value = this.value.replace(/[0-9]/g, ''); // remove números
-    });
-  </script>
+  const input = document.getElementById('apenasTexto');
+  input.addEventListener('input', function () {
+    this.value = this.value.replace(/[0-9]/g, ''); 
+  });
+
+  const form = document.querySelector('.formulario-pagamento');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    localStorage.setItem('pagamentoConcluido', 'debito');
+
+    const btn = form.querySelector('button[type="submit"]');
+    btn.textContent = "Pagamento feito";
+    btn.disabled = true;
+    btn.style.backgroundColor = "#c1ffb5";
+    btn.style.cursor = "default";
+
+    Array.from(form.elements).forEach(el => el.disabled = true);
+  });
+</script>
+
 
 </body>
 

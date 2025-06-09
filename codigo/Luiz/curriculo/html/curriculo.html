@@ -2,62 +2,117 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Envio de Currículo</title>
-    <link rel="stylesheet" href="../css/curriculo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Envio de Currículo</title>
+  <link rel="stylesheet" href="../css/curriculo.css" />
+  <style>
+
+    #mensagemSucesso {
+      display: none;
+      color: rgb(255, 255, 255);
+      margin-top: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <h1>
-                <a href="home.html"><img src="../img/logocrbranco.png" alt="logocr"></a>
-            </h1>
-        </div>
+  <header>
+    <div class="logo">
+      <h1>
+        <a href="home.html"><img src="../img/logocrbranco.png" alt="logocr" /></a>
+      </h1>
+    </div>
 
-        <nav class="menu">
-            <a href="home.html">Home</a>
-            <a href="mercado.html">Mercado</a>
-            <a href="cursos.html">Cursos</a>
-            <a href="empregos.html">Empregos</a>
-        </nav>
+    <nav class="menu">
+      <a href="home.html">Home</a>
+      <a href="mercado.html">Mercado</a>
+      <a href="cursos.html">Cursos</a>
+      <a href="empregos.html">Empregos</a>
+    </nav>
 
-        <div class="botoes-login">
-            <a href="#" class="entrar">Entrar</a>
-            <a href="#" class="cadastrar">Cadastrar</a>
-        </div>
-    </header>
+    <div class="botoes-login">
+      <a href="#" class="entrar">Entrar</a>
+      <a href="#" class="cadastrar">Cadastrar</a>
+    </div>
+  </header>
 
-    <main class="formulario-container">
-        <div class="form-box">
-            <h2>Sobre Você</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+  <main class="formulario-container">
+    <div class="form-box">
+      <h2>Sobre Você</h2>
+      <form id="formCurriculo">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required />
 
-                <label for="cpf">CPF:</label>
-                <input type="cpf" id="cpf" name="cpf" required>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required />
 
-                <label for="arquivo">Anexar Currículo (PDF ou DOC):</label>
-                <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx" required>
+        <label for="arquivo">Anexar Currículo (PDF ou DOC):</label>
+        <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx" />
 
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </main>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="mensagemSucesso">Currículo salvo com sucesso!</div>
+    </div>
+  </main>
 
-    <footer>
-        <div class="Redes">
-            <h3>Redes Sociais:</h3>
-            <a href="#"><p>Instagram</p></a>
-            <a href="#"><p>Facebook</p></a>
-            <a href="#"><p>Tiktok</p></a>
-        </div>
-    </footer>
+  <footer>
+    <div class="Redes">
+      <h3>Redes Sociais:</h3>
+      <a href="#"><p>Instagram</p></a>
+      <a href="#"><p>Facebook</p></a>
+      <a href="#"><p>Tiktok</p></a>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('formCurriculo');
+    const mensagemSucesso = document.getElementById('mensagemSucesso');
+
+
+    window.onload = () => {
+      const dadosSalvos = JSON.parse(localStorage.getItem('dadosCurriculo'));
+      if (dadosSalvos) {
+        form.nome.value = dadosSalvos.nome || '';
+        form.telefone.value = dadosSalvos.telefone || '';
+        form.cpf.value = dadosSalvos.cpf || '';
+      
+      }
+    };
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault(); 
+
+      
+      const nome = form.nome.value.trim();
+      const telefone = form.telefone.value.trim();
+      const cpf = form.cpf.value.trim();
+      const arquivoInput = form.arquivo;
+      const arquivoNome = arquivoInput.files.length > 0 ? arquivoInput.files[0].name : '';
+
+
+      const dadosParaSalvar = {
+        nome,
+        telefone,
+        cpf,
+        arquivoNome
+      };
+
+      
+      localStorage.setItem('dadosCurriculo', JSON.stringify(dadosParaSalvar));
+
+
+      mensagemSucesso.style.display = 'block';
+
+      
+      arquivoInput.value = '';
+    });
+  </script>
 </body>
 
 </html>
