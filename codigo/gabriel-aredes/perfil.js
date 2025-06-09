@@ -1,28 +1,13 @@
-// =================================================================================
-// JAVASCRIPT COMPLETO PARA A PÁGINA DE PERFIL (gabriel-aredes/perfil.js)
-// =================================================================================
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    // --- 1. CHAMADAS INICIAIS ---
-    // Funções que são executadas assim que a página termina de carregar
-    // -------------------------------------------------------------------
     checarUsuarioLogadoEAtualizarHeader();
     carregarDadosUsuario();
     carregarCursosInscritos();
 
-
-    // --- 2. DEFINIÇÃO DAS FUNÇÕES PRINCIPAIS ---
-    // Todas as funções que fazem o trabalho pesado
-    // -------------------------------------------------------------------
-
-    /**
-     * Verifica se há um usuário logado no localStorage e atualiza o cabeçalho da página.
-     */
     function checarUsuarioLogadoEAtualizarHeader() {
         const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
         const botoesLoginContainer = document.querySelector('.botoes-login');
-
         if (botoesLoginContainer) {
             if (usuarioLogado) {
                 botoesLoginContainer.innerHTML = `
@@ -39,27 +24,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    /**
-     * Carrega os dados do usuário (nome, email, foto, etc.) do localStorage
-     * e preenche os elementos correspondentes na página de perfil.
-     */
     function carregarDadosUsuario() {
         const usuarioLogadoString = localStorage.getItem('usuarioLogado');
-
         if (!usuarioLogadoString) {
-            alert("Você não está logado! Redirecionando para a página de cadastro.");
+            alert("Você não está logado! Redirecionando...");
             window.location.href = "../aldo/cadastro/html/cadastro.html"; 
             return; 
         }
-
         const usuario = JSON.parse(usuarioLogadoString);
-
-        // Preenche os dados do perfil dinamicamente
-        document.getElementById('foto-perfil').src = usuario.foto || 'imagens/joaooliveira.png'; // Usa a foto salva ou uma padrão
+        document.getElementById('foto-perfil').src = usuario.foto || 'imagens/avatar_padrao.png';
         document.getElementById('nome-usuario').textContent = `${usuario.nome} ${usuario.sobrenome}`;
         document.getElementById('email-usuario').textContent = usuario.email;
         document.getElementById('local-usuario').textContent = `${usuario.rua}, ${usuario.numero} - ${usuario.bairro}`;
-
         const membroDesdeElemento = document.getElementById('membro-desde');
         if (usuario.dataCadastro) {
             membroDesdeElemento.textContent = `Membro desde: ${usuario.dataCadastro}`;
@@ -68,37 +44,44 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    /**
-     * Carrega a lista de cursos em que o usuário está inscrito a partir do localStorage
-     * e cria os cards dos cursos dinamicamente na tela.
-     */
     function carregarCursosInscritos() {
         const cursosGrid = document.getElementById('cursos-grid');
         const cursosInscritosString = localStorage.getItem('cursosInscritos');
-        
-        if (cursosGrid) {
-            cursosGrid.innerHTML = ''; 
-
-            if (cursosInscritosString) {
-                const cursosInscritos = JSON.parse(cursosInscritosString);
-                if (cursosInscritos.length === 0) {
-                    cursosGrid.innerHTML = '<p class="aviso-sem-cursos">Você ainda não se inscreveu em nenhum curso.</p>';
-                    return;
-                }
-                cursosInscritos.forEach(curso => {
-                    // ... (lógica para criar e adicionar o card do curso)
-                });
-            } else {
+        if (!cursosGrid) return;
+        cursosGrid.innerHTML = ''; 
+        if (cursosInscritosString) {
+            const cursosInscritos = JSON.parse(cursosInscritosString);
+            if (cursosInscritos.length === 0) {
                 cursosGrid.innerHTML = '<p class="aviso-sem-cursos">Você ainda não se inscreveu em nenhum curso.</p>';
+                return;
             }
+            cursosInscritos.forEach(curso => {
+                const cardDoCursoHTML = `
+                    <div class="curso-item">
+                        <div class="curso-imagem">
+                            <img src="${curso.imagem || 'imagens/placeholder_curso.png'}" alt="Capa do curso ${curso.titulo}">
+                            <span class="tag-categoria">${curso.categoria || 'Geral'}</span>
+                        </div>
+                        <div class="curso-info">
+                            <h3>${curso.titulo}</h3>
+                            <p class="instrutor">Por: ${curso.instrutor}</p>
+                            <div class="progresso">
+                                <p>Progresso: ${curso.progresso}%</p>
+                                <div class="barra-progresso">
+                                    <div class="progresso-atual" style="width: ${curso.progresso}%;"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="botao-acessar">Continuar Aprendendo</a>
+                        </div>
+                    </div>
+                `;
+                cursosGrid.innerHTML += cardDoCursoHTML;
+            });
+        } else {
+            cursosGrid.innerHTML = '<p class="aviso-sem-cursos">Você ainda não se inscreveu em nenhum curso.</p>';
         }
     }
 
-    /**
-     * Função auxiliar para manter a lista geral de cadastros consistente
-     * sempre que o perfil do usuário logado é atualizado.
-     * @param {object} usuarioAtualizado - O objeto do usuário com os dados novos.
-     */
     function atualizarCadastroGeral(usuarioAtualizado) {
         let cadastros = JSON.parse(localStorage.getItem('cadastros')) || [];
         const index = cadastros.findIndex(user => user.email === usuarioAtualizado.email);
@@ -109,20 +92,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    // --- 3. EVENT LISTENERS ---
-    // Código que "ouve" as ações do usuário na página (cliques, envios, etc.)
-    // -------------------------------------------------------------------
-
-    // Listener para o botão SAIR (usando delegação de evento)
+    // botão SAIR 
     document.body.addEventListener('click', function(event) {
-        if (event.target.id === 'btnSair') {
+        const botaoSair = event.target.closest('#btnSair');
+        if (botaoSair) {
             localStorage.removeItem('usuarioLogado');
+            localStorage.removeItem('cursosInscritos');
             alert("Você saiu da sua conta. Redirecionando...");
             window.location.href = '../aldo/cadastro/html/cadastro.html';
         }
     });
 
-    // Listeners para a funcionalidade de ALTERAR FOTO
+    //ALTERAR FOTO
     const linkAlterarFoto = document.getElementById('link-alterar-foto');
     const inputFoto = document.getElementById('input-foto');
     if (linkAlterarFoto && inputFoto) {
@@ -150,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Listeners para a funcionalidade de EDITAR PERFIL (modal)
+    // EDITAR PERFIL (modal)
     const botaoEditarPerfil = document.querySelector('.botao-editar-perfil');
     const modalEditar = document.getElementById('modal-editar-perfil');
     const formEditar = document.getElementById('form-editar-perfil');
@@ -173,41 +154,26 @@ document.addEventListener('DOMContentLoaded', function () {
             modalEditar.style.display = 'none';
         });
 
-       // SUBSTITUA O BLOCO 'formEditar.addEventListener' EXISTENTE POR ESTE
+        formEditar.addEventListener('submit', function(event) {
+            event.preventDefault();
+            let usuario = JSON.parse(localStorage.getItem('usuarioLogado'));
+            if (usuario) {
+                usuario.nome = document.getElementById('edit-nome').value;
+                usuario.sobrenome = document.getElementById('edit-sobrenome').value;
+                usuario.rua = document.getElementById('edit-rua').value;
+                usuario.numero = document.getElementById('edit-numero').value;
+                usuario.bairro = document.getElementById('edit-bairro').value;
 
-// Quando o formulário de edição for enviado (clicar em "Salvar")...
-formEditar.addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o recarregamento da página
+                localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
+                atualizarCadastroGeral(usuario);
+                
+                document.getElementById('nome-usuario').textContent = `${usuario.nome} ${usuario.sobrenome}`;
+                document.getElementById('local-usuario').textContent = `${usuario.rua}, ${usuario.numero} - ${usuario.bairro}`;
 
-    const usuarioLogadoString = localStorage.getItem('usuarioLogado');
-    if (usuarioLogadoString) {
-        let usuario = JSON.parse(usuarioLogadoString);
-
-        // 1. Atualiza o objeto 'usuario' com os novos valores do formulário
-        usuario.nome = document.getElementById('edit-nome').value;
-        usuario.sobrenome = document.getElementById('edit-sobrenome').value;
-        usuario.rua = document.getElementById('edit-rua').value;
-        usuario.numero = document.getElementById('edit-numero').value;
-        usuario.bairro = document.getElementById('edit-bairro').value;
-
-        // 2. Salva o objeto ATUALIZADO de volta no localStorage
-        localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
-        
-        // Atualiza na lista geral também para manter a consistência
-        atualizarCadastroGeral(usuario);
-
-        // --- MUDANÇA PRINCIPAL AQUI ---
-        // 3. Em vez de recarregar tudo, atualizamos apenas o texto na tela.
-        //    A foto, que não foi alterada, permanece como está.
-        document.getElementById('nome-usuario').textContent = `${usuario.nome} ${usuario.sobrenome}`;
-        document.getElementById('local-usuario').textContent = `${usuario.rua}, ${usuario.numero} - ${usuario.bairro}`;
-
-        // 4. Esconde o modal de edição
-        modalEditar.style.display = 'none';
-        
-        alert('Perfil atualizado com sucesso!');
-    }
-});
+                modalEditar.style.display = 'none';
+                alert('Perfil atualizado com sucesso!');
+            }
+        });
     }
 
-}); // Fim do addEventListener de DOMContentLoaded
+}); 
