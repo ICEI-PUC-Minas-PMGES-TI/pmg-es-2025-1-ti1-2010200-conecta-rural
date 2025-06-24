@@ -8,7 +8,7 @@ function permitirSomenteLetras(input) {
 permitirSomenteLetras(document.getElementById('nome'));
 permitirSomenteLetras(document.getElementById('local'));
 
-// ☎️ Função para aplicar máscara no telefone
+// ☎️ Máscara para telefone
 const telefoneInput = document.getElementById('telefone');
 telefoneInput.addEventListener('input', function(e) {
     let value = e.target.value.replace(/\D/g, '');
@@ -23,7 +23,7 @@ telefoneInput.addEventListener('input', function(e) {
     e.target.value = value;
 });
 
-// 💰 Função para aplicar máscara no campo valor
+// 💰 Máscara para valor
 const valorInput = document.getElementById('valor');
 valorInput.addEventListener('input', function(e) {
     let value = e.target.value.replace(/\D/g, '');
@@ -33,11 +33,11 @@ valorInput.addEventListener('input', function(e) {
     e.target.value = 'R$ ' + value;
 });
 
-// 📝 Função para capturar os dados do formulário e salvar no localStorage
+// 📝 Captura e envio dos dados
 const form = document.querySelector('form');
 
 form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita que o formulário recarregue a página
+    event.preventDefault();
 
     const oferta = {
         nome: document.getElementById('nome').value.trim(),
@@ -49,23 +49,35 @@ form.addEventListener('submit', function(event) {
         observacoes: document.getElementById('observacoes').value.trim()
     };
 
-    // Validação simples se algum campo obrigatório está vazio
     if (!oferta.nome || !oferta.telefone || !oferta.area || !oferta.descricao || !oferta.local || !oferta.valor) {
         alert('Por favor, preencha todos os campos obrigatórios.');
         return;
     }
 
-    // Recupera ofertas existentes do localStorage
-    let ofertas = JSON.parse(localStorage.getItem('ofertasEmprego')) || [];
-
-    // Adiciona a nova oferta
-    ofertas.push(oferta);
-
     // Salva no localStorage
+    let ofertas = JSON.parse(localStorage.getItem('ofertasEmprego')) || [];
+    ofertas.push(oferta);
     localStorage.setItem('ofertasEmprego', JSON.stringify(ofertas));
 
-    alert('Oferta de emprego cadastrada com sucesso!');
-
-    // Limpa o formulário
-    form.reset();
+    // Envia para o JSON Server
+    fetch('http://localhost:3000/ofertasEmprego', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(oferta)
+    })
+    .then(response => {
+        if (!response.ok) throw new Error('Erro ao enviar para o servidor');
+        return response.json();
+    })
+    .then(data => {
+        console.log('Oferta enviada para o servidor:', data);
+        alert('Oferta de emprego cadastrada com sucesso!');
+        form.reset(); // limpa o formulário
+    })
+    .catch(error => {
+        console.error('Erro ao enviar oferta:', error);
+        alert('Erro ao enviar os dados para o servidor.');
+    });
 });
