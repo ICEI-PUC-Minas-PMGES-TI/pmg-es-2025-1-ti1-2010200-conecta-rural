@@ -1,6 +1,6 @@
 {
   "usuarios": [
-],
+  ],
   "produtos": [
     {
       "id": "1",
@@ -713,6 +713,8 @@
       "video": "https://youtu.be/tHM0JC7KZTo?si=1zPJj-ERaSSfuUzv"
     }
   ],
-  "candidaturas": [],
-  "inscricoes": []
+  "candidaturas": [
+  ],
+  "inscricoes": [
+  ]
 }
