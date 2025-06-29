@@ -180,66 +180,68 @@ O vídeo a seguir traz uma apresentação do problema que a equipe está tratand
 
 Esta seção apresenta as funcionalidades da solução.Info
 
-##### Funcionalidade 1 - Cadastro de Contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 1 - Cadastro de Usuarios 
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Permite a inclusão de um perfil de usuário.
 
-* **Estrutura de dados:** [Contatos](#ti_ed_contatos)
 * **Instruções de acesso:**
-  * Abra o site e efetue o login
-  * Acesse o menu principal e escolha a opção Cadastros
-  * Em seguida, escolha a opção Contatos
-* **Tela da funcionalidade**:
+  * Abra o site 
+  * Acesse o menu principal e escolha a opção Cadastrar
+  * Em seguida realize seu cadastro
 
-![Tela de Funcionalidade](images/exemplo-funcionalidade.png)
+* **Tela da funcionalidade Cadastro**:
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+![Tela de Funcionalidade-1 pt1]![alt text](images/funcionalidade1pt1.png)
+![Tela de Funcionalidade-1 pt2]![alt text](images/funcionalidade1pt2.png)
+![Tela de Funcionalidade-1 pt3]![alt text](images/funcionalidade1pt3.png)
 
-## Estruturas de Dados
-
-Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info
-
-##### Estrutura de Dados - Contatos   ⚠️ EXEMPLO ⚠️
-
-Contatos da aplicação
+##### Estrutura de Dados - Cadastro   
 
 ```json
   {
     "id": 1,
     "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
+    "sobrenome": "Horta Santos",
+    "data-nasciento": "18/04/2006",
+    "CPF": "10248890670",
+    "CEP": "3293029",
+    "Rua": "agostinho bretas",
+    "bairro": "Caiçara",
+    "numero": "1",
+    "complemento": "apt 403",
+    "Email": "abc@gmail.com",
+    "Senha": "3293029"
   }
   
 ```
 
-##### Estrutura de Dados - Usuários  ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 2 - Cadastro de Emprego
 
-Registro dos usuários do sistema utilizados para login e para o perfil do sistema
+Permite a inclusão de um novo emprego no site.
+
+* **Instruções de acesso:**
+  * Abra o site 
+  * Acesse o menu de emprego e escolha a opção cadastrar vaga.
+  * Em seguida realize o cadastro
+
+* **Tela da funcionalidade Cadastro de Emprego**:
+
+![Tela de Funcionalidade-2]!![alt text](images/cadastroemprego.png)
+
+##### Estrutura de Dados - Cadastro de Emprego 
 
 ```json
   {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
-  }
+      "id": "1",
+      "tituloVaga": "Tratorista",
+      "descricao": "Vaga para tratorista com experiência em operação de máquinas agrícolas e manutenção básica.",
+      "local": "Fazenda São Miguel",
+      "responsavel": "Henrique Fagundes",
+      "contato": "(31)92345-7843",
+      "requisitos": "Ter experiência na gestão de tratores, focado na sua funcionalidade e praticidade."
+    },
+  
 ```
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação quanto outras estruturas que foram criadas para algum tipo de configuração
->
-> Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.
 >
 > **Orientações:**
 >
