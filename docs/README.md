@@ -170,11 +170,6 @@ O vídeo a seguir traz uma apresentação do problema que a equipe está tratand
 
 [![Vídeo do projeto](images/video.png)](https://youtu.be/FYGZcK3QUHQ)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O video de apresentação é voltado para que o público externo possa conhecer a solução. O formato é livre, sendo importante que seja apresentado o problema e a solução numa linguagem descomplicada e direta.
->
-> Inclua um link para o vídeo do projeto.
 
 ## Funcionalidades
 
